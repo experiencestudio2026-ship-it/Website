@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Democracy &amp; Space</title>
+  <!-- tab icon: a pink square -->
+  <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23ff4fbf'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- The 3D space: every project is a card floating in it -->
+  <main class="world" id="world" tabindex="0"
+        aria-label="A white 3D space showing all projects as images. Drag to rotate, scroll to zoom, click an image to open the project. All projects are also listed in the Index.">
+    <div class="world__cards" id="cards">
+      <div class="center-title" id="center-title" aria-hidden="true">
+        <span class="center-title__name">Democracy &amp; Space</span>
+        <span class="center-title__time"></span>
+      </div>
+      <div class="center-title center-title--mask" id="center-title-mask" aria-hidden="true">
+        <span class="center-title__name">Democracy &amp; Space</span>
+        <span class="center-title__time"></span>
+      </div>
+    </div>
+  </main>
+
+  <div class="cursor-label" id="cursor-label" aria-hidden="true"></div>
+
+  <!-- Header: navigation and menus, top center -->
+  <header class="header">
+    <div class="header__bar">
+      <nav class="nav" aria-label="Main">
+        <button type="button" class="nav__item" data-menu="about" aria-expanded="false">About</button>
+        <button type="button" class="nav__item" data-menu="index" aria-expanded="false">Index</button>
+      </nav>
+    </div>
+
+    <section class="menu" id="menu-about" hidden>
+      <h2 class="menu__title">About</h2>
+      <p>Democracy &amp; Space collects student projects on the architecture of democratic institutions:
+        the rooms where parliaments, councils and assemblies meet, and how their spatial
+        organisation shapes debate, visibility and power.</p>
+      <p>Every image in the space is a project. Drag to look around, move images to rearrange
+        the space, and open a project by clicking it.</p>
+    </section>
+
+    <section class="menu" id="menu-index" hidden>
+      <h2 class="menu__title">Index</h2>
+      <ul class="menu__list" id="index-list"></ul>
+    </section>
+  </header>
+
+  <!-- Search, bottom center; results open upwards -->
+  <div class="search">
+    <ul class="search__results" id="search-results"></ul>
+    <input class="search__input" id="search" type="search" placeholder="explore…" autocomplete="off"
+           aria-label="Search projects (type * to list all)">
+  </div>
+
+  <!-- Project panel, opens over the space -->
+  <article class="panel" id="panel" aria-hidden="true" aria-labelledby="panel-title">
+    <a class="panel__close" href="#" aria-label="Close project">&times;</a>
+    <div class="panel__content" id="panel-content"></div>
+  </article>
+
+  <script src="js/projects-data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+TITLE: United Nations Security Council Chamber
+LOCATION: New York, United States
+AUTHOR:
+YEAR:
+
+# --- site editor settings (optional) ---
+POSITION: -13, 0
+MAP WIDTH: 240
+VIDEO FOCUS: 0.2
+
+TEXT:
+Placeholder text for the United Nations Security Council Chamber.
+
+CAPTIONS:

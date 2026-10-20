@@ -1,0 +1,13 @@
+TITLE: House of Commons Assembly
+LOCATION: London, United Kingdom
+AUTHOR:
+YEAR:
+
+# --- site editor settings (optional) ---
+POSITION: -8, -8
+MAP WIDTH: 240
+
+TEXT:
+Placeholder text for the House of Commons.
+
+CAPTIONS:

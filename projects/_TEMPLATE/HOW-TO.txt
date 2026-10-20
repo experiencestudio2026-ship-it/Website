@@ -1,0 +1,69 @@
+DEMOCRACY & SPACE - HOW TO PREPARE YOUR PROJECT FOLDER
+=====================================================
+
+Use this folder as your starting point: replace the example files with your
+own and name them the same way. The END of each file name tells the website
+what the file is for - so please keep it exactly.
+
+
+1. FOLDER NAME
+   lastname_project-title
+   - lowercase, no spaces, words joined with -
+   - no umlauts or accents (ä -> ae, ö -> oe, ü -> ue, ß -> ss, é -> e)
+   Example:  mueller_open-parliament
+
+
+2. FILE NAMES
+   Start every file with your project title (same as in the folder name),
+   then _ and its function:
+
+   project-title_hero.png     REPRESENTS YOUR PROJECT ON THE LANDING PAGE
+                              your isometric drawing (.png, .jpg or .webp)
+                              - or a video instead: project-title_hero.mp4
+
+   project-title_1.jpg        IMAGES ON YOUR PROJECT PAGE
+   project-title_2.jpg        shown in this order: _1 first, then _2, _3, ...
+   project-title_3.jpg
+   ...
+
+   project-title_info.txt     YOUR TEXTS: title, location, author, year,
+                              project text and image captions
+
+   project-title_background.mp4   (optional) video playing behind your
+                                  project page
+
+   Example for the folder mueller_open-parliament:
+     open-parliament_hero.png
+     open-parliament_1.jpg
+     open-parliament_2.jpg
+     open-parliament_info.txt
+
+
+3. HERO DRAWING (_hero.png)
+   - true isometric (30 degrees), like the example
+   - black lines, white or transparent background
+   - crop tightly around the drawing: no empty margins
+   - around 1500 px wide
+
+
+4. PROJECT IMAGES (_1, _2, _3, ...)
+   - the number sets the order and links the image to its caption in
+     _info.txt:  open-parliament_2.jpg  <->  "2: ..." under CAPTIONS:
+   - JPG or PNG, max. 2500 px on the long side, under 1 MB each
+
+
+5. VIDEOS (optional, _hero.mp4 or _background.mp4)
+   - MP4 (H.264), no sound needed, max. ~30 seconds, under 20 MB
+   - a _hero video replaces the drawing on the landing page (use one or
+     the other) and also plays behind your project page
+   - iPhone videos (.mov) and photos (.heic) don't work on the website:
+     export them as .mp4 / .jpg first
+
+
+6. TEXTS (_info.txt)
+   - keep the KEYWORDS: (TITLE:, LOCATION:, AUTHOR:, YEAR:, TEXT:, CAPTIONS:)
+   - save as UTF-8 (default in most editors) so special characters survive
+
+
+7. SEND
+   Zip the whole folder and send it.
