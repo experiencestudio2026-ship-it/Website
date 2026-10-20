@@ -214,15 +214,26 @@ input {
   line-height: 1;
   white-space: nowrap;
   pointer-events: none;       /* drags and clicks go through */
-  /* this copy sits between the cards in depth: white, so cards behind it
-     disappear under the letters (must match the white background) */
+  /* white letters on top of everything invert what is under them:
+     white background -> black text, any card (in front of or behind the
+     title's depth) -> the card's content, inverted */
   color: #fff;
+  mix-blend-mode: difference;
 }
 
 .center-title__name,
-.center-title__time {
+.center-title__time,
+.center-title__note {
   display: block;
   text-align: center;
+}
+
+/* small note under the clock */
+.center-title__note {
+  margin-top: 0.4em;
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 0.22em;
 }
 
 /* live date and time under the title: yyyy.mm.dd.hh.mm.ss */
@@ -232,13 +243,6 @@ input {
   font-style: normal;
   font-size: 0.26em;
   letter-spacing: 0.08em;
-}
-
-/* a second copy on top of everything inverts what is under the letters:
-   white background / white title -> black text,
-   a card in front of the title   -> the card's content, inverted */
-.center-title--mask {
-  mix-blend-mode: difference;
 }
 
 /* title next to the cursor while hovering a card */

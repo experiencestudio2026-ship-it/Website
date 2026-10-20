@@ -36,7 +36,6 @@
   const cardLayer = document.getElementById("cards");
   const cursorLabel = document.getElementById("cursor-label");
   const centerTitle = document.getElementById("center-title");
-  const centerTitleMask = document.getElementById("center-title-mask");
   const panel = document.getElementById("panel");
   const panelContent = document.getElementById("panel-content");
   const searchInput = document.getElementById("search");
@@ -239,7 +238,7 @@
   });
 
   function placeCards() {
-    // the title sits at the center of rotation, between the cards in depth;
+    // the title sits at the center of rotation, above every card;
     // its size ignores zoom, so it always stays the same size on screen,
     // and it never gets wider than the screen
     const c = project(0, 0, 0);
@@ -247,10 +246,7 @@
     if (titleWidth) titleScale = Math.min(titleScale, (width * 0.9) / titleWidth);
     const titleTransform = `translate(${c.x}px, ${c.y}px) scale(${titleScale}) translate(-50%, -50%)`;
     centerTitle.style.transform = titleTransform;
-    centerTitle.style.zIndex = String(Math.round(10000 + c.z));
-    // the inverting copy: same place, always above every card
-    centerTitleMask.style.transform = titleTransform;
-    centerTitleMask.style.zIndex = "30000";
+    centerTitle.style.zIndex = "30000";
 
     projects.forEach((p) => {
       const pr = project(p.pos.x, p.pos.y, p.pos.z);
