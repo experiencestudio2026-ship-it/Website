@@ -26,6 +26,9 @@
   const VIDEO_LOWRES_WIDTH = 80;  // pixels across for hero videos (lower = blockier)
   const SOUND_FADE = 0.0025;      // volume change per ms when the front video changes (1 / 400ms)
   const DRAG_THRESHOLD = 6;       // px moved before a press counts as a drag
+  const FIT_WIDTH = 1000;         // screens narrower than this see the space smaller
+  const FIT_HEIGHT = 700;         // same for screens lower than this
+  const MIN_FIT = 0.5;            // smallest scale on very small screens (phones)
   const MOVED_KEY = "moved-cards";
 
   // ---- Elements -----------------------------------------------------------
@@ -123,6 +126,8 @@
   let lastInteraction = -Infinity;
   let hovering = 0;
   let width = 0, height = 0;
+  let fit = 1;                    // whole space scaled down to fit small screens
+  let titleWidth = 0;             // natural width of the center title, in px
   let openId = null;
 
   // ---- 3D -> screen ---------------------------------------------------------
@@ -133,7 +138,7 @@
     const cp = Math.cos(PITCH), sp = Math.sin(PITCH);
     const y2 = y * cp - z1 * sp;
     const z2 = y * sp + z1 * cp;                // towards the camera = positive
-    const s = (FOCAL / Math.max(CAMERA_DIST - z2, 1)) * view.zoom;
+    const s = (FOCAL / Math.max(CAMERA_DIST - z2, 1)) * view.zoom * fit;
     return { x: width / 2 + x1 * s, y: height / 2 + y2 * s, s, z: z2 };
   }
 
@@ -199,19 +204,25 @@
     sizeCard(p, 4, 3);
 
     // title next to the cursor; the drift pauses so the card can be clicked
-    card.addEventListener("pointerenter", () => {
+    // (mouse only: on touch screens there is no cursor to follow)
+    card.addEventListener("pointerenter", (e) => {
+      if (e.pointerType !== "mouse") return;
       hovering++;
       // inline span, so every line of the title gets its own black bar
       cursorLabel.replaceChildren(el("span", "cursor-label__text", p.title));
       cursorLabel.classList.add("is-visible");
     });
-    card.addEventListener("pointerleave", () => {
+    card.addEventListener("pointerleave", (e) => {
+      if (e.pointerType !== "mouse") return;
       hovering = Math.max(0, hovering - 1);
       cursorLabel.classList.remove("is-visible");
     });
 
-    // pressing a card starts moving that card instead of rotating the space
+    // pressing a card starts moving that card instead of rotating the space;
+    // on touch screens a finger on a card still rotates / pinches the space
+    // (cards cover much of a small screen) and a tap opens it
     card.addEventListener("pointerdown", (e) => {
+      if (e.pointerType === "touch") return;
       if (e.pointerType === "mouse" && e.button !== 0) return;
       e.stopPropagation();
       spin = 0;
@@ -229,9 +240,12 @@
 
   function placeCards() {
     // the title sits at the center of rotation, between the cards in depth;
-    // its size ignores zoom, so it always stays the same size on screen
+    // its size ignores zoom, so it always stays the same size on screen,
+    // and it never gets wider than the screen
     const c = project(0, 0, 0);
-    const titleTransform = `translate(${c.x}px, ${c.y}px) scale(${c.s / view.zoom}) translate(-50%, -50%)`;
+    let titleScale = c.s / view.zoom;
+    if (titleWidth) titleScale = Math.min(titleScale, (width * 0.9) / titleWidth);
+    const titleTransform = `translate(${c.x}px, ${c.y}px) scale(${titleScale}) translate(-50%, -50%)`;
     centerTitle.style.transform = titleTransform;
     centerTitle.style.zIndex = String(Math.round(10000 + c.z));
     // the inverting copy: same place, always above every card
@@ -252,7 +266,8 @@
 
   // ---- Sound: only the video closest to the viewer is heard ---------------------
   // Browsers only allow sound after the visitor interacted with the page,
-  // so it starts with the first click / drag / key press.
+  // so it starts with the first click / tap / key press (on touch screens
+  // only the end of a touch counts as an interaction).
   const videos = projects.filter((p) => p.video);
   let soundAllowed = false;
 
@@ -264,7 +279,7 @@
       p.video.play().catch(() => {});
     });
   };
-  ["pointerdown", "keydown", "wheel"].forEach((type) =>
+  ["pointerup", "touchend", "keydown"].forEach((type) =>
     window.addEventListener(type, allowSound, { passive: true }));
 
   function updateSound(dt) {
@@ -640,9 +655,12 @@
   function resize() {
     width = world.clientWidth;
     height = world.clientHeight;
+    fit = clamp(Math.min(width / FIT_WIDTH, height / FIT_HEIGHT), MIN_FIT, 1);
+    titleWidth = centerTitle.offsetWidth;          // layout width, ignores the transform
   }
   resize();
   window.addEventListener("resize", resize);
+  document.fonts?.ready.then(resize);              // the title font changes its width
 
   route();
   world.focus({ preventScroll: true });
