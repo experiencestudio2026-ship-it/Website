@@ -3,6 +3,7 @@
 # Lines starting with # are ignored - you can delete them.
 
 TITLE: Circle Typology
+CONTRIBUTED BY: Raihane Lamane
 
 CREDITS: Angela Weiss
 

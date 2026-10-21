@@ -323,7 +323,7 @@ window.PROJECTS_DATA = [
         "author":  null,
         "year":  null,
         "size":  null,
-        "contributor":  null,
+        "contributor":  "Raihane Lamane",
         "credits":  "Angela Weiss",
         "text":  "The circular typology has evolved from religious and symbolic gatherings to modern political assemblies. In the past, the circle represented unity and equality before a shared sacred presence, as illustrated by communal meals and the legend of King Arthur’s Round Table. In Ancient Greece, citizens gathered in public assemblies to debate and make political decisions, establishing a link between collective gathering and democracy.\n\nFrom the 18th century onwards, circular and semicircular arrangements became associated with political representation and parliamentary debate. Today, this typology can be found in international institutions, citizens’ assemblies, public consultations and community meetings, where it encourages dialogue and collective decision-making.\n\nThe power of the circle lies in its spatial organisation: everyone can see one another, there is no inherently privileged end, and the shared centre brings participants together. Unlike a frontal arrangement, which establishes a clear hierarchy between speaker and audience, the circle encourages face-to-face interaction and gives the group a sense of collective identity. However, spatial equality does not necessarily guarantee political equality: the way speaking time, access and decision-making power are distributed remains essential.",
         "heroImage":  "projects/typology-circle/TYPOLOGY_Circle_hero.png",
