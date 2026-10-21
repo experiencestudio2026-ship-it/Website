@@ -71,14 +71,17 @@
     location: d.location || "",
     author: d.author || "",
     year: d.year || "",
+    size: d.size || "",
+    credits: d.credits || "",
     text: d.text || "",
     gallery: d.gallery || [],
     heroImage: d.heroImage || null,
     heroVideo: d.heroVideo || null,
     background: d.background || null,
+    invert: d.invert !== false,
   }));
   const byId = new Map(projects.map((p) => [p.id, p]));
-  const metaLine = (p) => [p.location, p.author, p.year].filter(Boolean).join(" · ");
+  const metaLine = (p) => [p.location, p.author, p.year, p.size].filter(Boolean).join(" · ");
 
   // ---- Cloud positions ----------------------------------------------------
   // a lattice of columns x levels x rows; each card takes a random free point
@@ -172,7 +175,7 @@
   }
 
   projects.forEach((p) => {
-    const card = el("a", "card");
+    const card = el("a", p.invert ? "card" : "card card--no-invert");
     card.href = `#${encodeURIComponent(p.id)}`;
     card.setAttribute("aria-label", [p.title, metaLine(p)].filter(Boolean).join(", "));
     card.draggable = false;
@@ -501,6 +504,7 @@
     const text = el("div", "project__text");
     p.text.split(/\n\s*\n/).map((s) => s.trim()).filter(Boolean)
       .forEach((par) => text.append(el("p", null, par)));
+    if (p.credits) text.append(el("p", "project__credits", `Photography by: ${p.credits}`));
 
     const media = el("div", "project__media");
     const video = p.background || p.heroVideo;

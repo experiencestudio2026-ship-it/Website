@@ -48,3 +48,5 @@ OPTIONAL SETTINGS in _info.txt (for fine-tuning, students don't need these)
                           (0.5, 1 = bottom center - right for tightly cropped drawings)
     VIDEO FOCUS: 0.5      which part of the hero video the map crop shows
                           (0 = left edge ... 1 = right edge)
+    INVERT: no            hero images are shown inverted (made for white
+                          drawings) - "no" keeps the real colors, e.g. for photos

@@ -6,6 +6,8 @@ TITLE: Example Project
 LOCATION: Berlin, Germany
 AUTHOR: Max Mustermann
 YEAR: 2026
+SIZE: 120 m²
+CREDITS: Erika Musterfrau, Max Mustermann
 
 TEXT:
 This is the project text. It is shown next to your images on the project page

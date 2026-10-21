@@ -7,6 +7,8 @@ window.PROJECTS_DATA = [
         "location":  "Berlin, Germany",
         "author":  "",
         "year":  "",
+        "size":  null,
+        "credits":  null,
         "text":  "Placeholder text for the German Bundestag.",
         "heroImage":  null,
         "heroVideo":  "projects/bundestag/bundestag_hero.mp4",
@@ -23,7 +25,8 @@ window.PROJECTS_DATA = [
                      ],
         "mapWidth":  240,
         "anchor":  null,
-        "videoFocusX":  null
+        "videoFocusX":  null,
+        "invert":  true
     },
     {
         "id":  "house-of-commons",
@@ -31,6 +34,8 @@ window.PROJECTS_DATA = [
         "location":  "London, United Kingdom",
         "author":  "",
         "year":  "",
+        "size":  null,
+        "credits":  null,
         "text":  "Placeholder text for the House of Commons.",
         "heroImage":  null,
         "heroVideo":  "projects/house-of-commons/house-of-commons_hero.mp4",
@@ -47,7 +52,8 @@ window.PROJECTS_DATA = [
                      ],
         "mapWidth":  240,
         "anchor":  null,
-        "videoFocusX":  null
+        "videoFocusX":  null,
+        "invert":  true
     },
     {
         "id":  "mustermann_example-project",
@@ -55,6 +61,8 @@ window.PROJECTS_DATA = [
         "location":  "Berlin, Germany",
         "author":  "Max Mustermann",
         "year":  "2026",
+        "size":  null,
+        "credits":  null,
         "text":  "This is the project text. It is shown next to your images on the project page\nand can be as long as you like.\n\nLeave an empty line to start a new paragraph.",
         "heroImage":  "projects/mustermann_example-project/example-project_hero.webp",
         "heroVideo":  null,
@@ -79,7 +87,8 @@ window.PROJECTS_DATA = [
                        0.444,
                        0.618
                    ],
-        "videoFocusX":  null
+        "videoFocusX":  null,
+        "invert":  true
     },
     {
         "id":  "un-security-council",
@@ -87,6 +96,8 @@ window.PROJECTS_DATA = [
         "location":  "New York, United States",
         "author":  "",
         "year":  "",
+        "size":  null,
+        "credits":  null,
         "text":  "Placeholder text for the United Nations Security Council Chamber.",
         "heroImage":  null,
         "heroVideo":  "projects/un-security-council/un-security-council_hero.mp4",
@@ -107,6 +118,131 @@ window.PROJECTS_DATA = [
                      ],
         "mapWidth":  240,
         "anchor":  null,
-        "videoFocusX":  0.2
+        "videoFocusX":  0.2,
+        "invert":  true
+    },
+    {
+        "id":  "assembly",
+        "title":  "Assembly",
+        "location":  "London, UK",
+        "author":  "Urban Radicals",
+        "year":  "2024",
+        "size":  "35 m²",
+        "credits":  "Lorenzo Zandri, Luke O’Donovan",
+        "text":  "Urban Radicals is a collective of architects who are interested in the roots of things. Their projects stem from an exploration of everyday life, function and the informal. The project ‘An Alternative Parliament for London’ comprises four installations that explore democracy and public debate in the city of London. This project examines the possibility of shifting democratic debate from closed institutions to the streets, squares and shared spaces. Which spaces allow us to engage in debate and discussion – whether formal or informal – within the free, public space that is the city?\n\nThis installation is an open-air auditorium, serving as a space for public debates and performances. Modelled on venues for political debates, the aim here is to bring the process of democratic debate into the city and onto the streets. The structure therefore takes the form of a continuous horseshoe-shaped bench, situated beneath an inflatable canopy, which fosters a sense of community and encourages reflection.",
+        "heroImage":  "projects/assembly/Assembly-Urban-Radicals_hero.webp",
+        "heroVideo":  null,
+        "background":  null,
+        "gallery":  [
+                        {
+                            "src":  "projects/assembly/Assembly-Urban-Radicals_1.webp",
+                            "caption":  "Isometric."
+                        },
+                        {
+                            "src":  "projects/assembly/Assembly-Urban-Radicals_2.webp",
+                            "caption":  "Exterior view of the assembly hall."
+                        }
+                    ],
+        "position":  null,
+        "mapWidth":  null,
+        "anchor":  null,
+        "videoFocusX":  null,
+        "invert":  false
+    },
+    {
+        "id":  "voicing-pod",
+        "title":  "Voicing Pod",
+        "location":  "London, UK",
+        "author":  "Urban Radicals",
+        "year":  "2024",
+        "size":  "4 m²",
+        "credits":  "Lorenzo Zandri, Nasios Varnavas, Luke O’Donovan",
+        "text":  "Urban Radicals is a collective of architects who are interested in the roots of things. Their projects stem from an exploration of everyday life, function and the informal. The project ‘An Alternative Parliament for London’ comprises four installations that explore democracy and public debate in the city of London. This project examines the possibility of shifting democratic debate from closed institutions to the streets, squares and shared spaces. Which spaces allow us to engage in debate and discussion – whether formal or informal – within the free, public space that is the city?\n\nSituated deep within the iconic Lloyd’s building, this intimate space is dedicated to conversations and podcasts. Inspired by the functional aesthetic of the building that houses it, its technical installations and the surrounding telephone boxes, this ‘pod’ suggests that such intimate spaces deserve to be regarded as buildings in their own right, as they often facilitate important activities facing onto the street and bring cultural and aesthetic value to shared urban spaces.",
+        "heroImage":  "projects/voicing-pod/Voicing-Pod-Urban_Radicals_hero.webp",
+        "heroVideo":  null,
+        "background":  null,
+        "gallery":  [
+                        {
+                            "src":  "projects/voicing-pod/Voicing-Pod-Urban-Radicals_1.jpg",
+                            "caption":  "Isometric."
+                        },
+                        {
+                            "src":  "projects/voicing-pod/Voicing-Pod-Urban-Radicals_2.webp",
+                            "caption":  "Exterior view."
+                        },
+                        {
+                            "src":  "projects/voicing-pod/Voicing-Pod-Urban_Radicals_3.webp",
+                            "caption":  "Movement of the door."
+                        }
+                    ],
+        "position":  null,
+        "mapWidth":  null,
+        "anchor":  null,
+        "videoFocusX":  null,
+        "invert":  false
+    },
+    {
+        "id":  "roundtable",
+        "title":  "Roundtable",
+        "location":  "London, UK",
+        "author":  "Urban Radicals",
+        "year":  "2024",
+        "size":  "14 m²",
+        "credits":  "Luke O’Donovan, Lorenzo Zandri",
+        "text":  "Urban Radicals is a collective of architects who are interested in the roots of things. Their projects stem from an exploration of everyday life, function and the informal. The project ‘An Alternative Parliament for London’ comprises four installations that explore democracy and public debate in the city of London. This project examines the possibility of shifting democratic debate from closed institutions to the streets, squares and shared spaces. Which spaces allow us to engage in debate and discussion – whether formal or informal – within the free, public space that is the city?\n\nInspired by the traditional format of debates, the round-table format facilitates conversations that are both formal and informal. The table is constructed from prefabricated modular components and recycled materials, such as industrial concrete pipes, decking panels and electricity poles. The plants arranged on it tell stories of origin, evoking migratory movements to the United Kingdom and symbolising London’s vibrant multicultural communities.",
+        "heroImage":  "projects/roundtable/Roundtable-Urban-Radicals_hero.webp",
+        "heroVideo":  null,
+        "background":  null,
+        "gallery":  [
+                        {
+                            "src":  "projects/roundtable/Roundtable-Urban-Radicals_1.webp",
+                            "caption":  "Isometric."
+                        },
+                        {
+                            "src":  "projects/roundtable/Roundtable-Urban-Radicals_2.webp",
+                            "caption":  "Exterior view."
+                        },
+                        {
+                            "src":  "projects/roundtable/Roundtable-Urban-Radicals_3.webp",
+                            "caption":  "Top view."
+                        }
+                    ],
+        "position":  null,
+        "mapWidth":  null,
+        "anchor":  null,
+        "videoFocusX":  null,
+        "invert":  false
+    },
+    {
+        "id":  "speakers-plinths",
+        "title":  "Speaker\u0027s Plinths",
+        "location":  "London, UK",
+        "author":  "Urban Radicals",
+        "year":  "2024",
+        "size":  "17 m²",
+        "credits":  "Lorenzo Zandri, Nasios Varnavas, Luke O’Donovan",
+        "text":  "Urban Radicals is a collective of architects who are interested in the roots of things. Their projects stem from an exploration of everyday life, function and the informal. The project ‘An Alternative Parliament for London’ comprises four installations that explore democracy and public debate in the city of London. This project examines the possibility of shifting democratic debate from closed institutions to the streets, squares and shared spaces. Which spaces allow us to engage in debate and discussion – whether formal or informal – within the free, public space that is the city?\n\nDrawing on Aristotle’s Peripatetic school of philosophy, this series of platforms features surfaces on which residents can write and share their thoughts.  Spanning London’s historic district, this installation encourages the expression of personal opinions, the sharing of thoughts on the city, and the creation of informal discussions and performances along a walkable route. This street furniture also serves as skateboarding features.",
+        "heroImage":  "projects/speakers-plinths/Speakers-Plinths-Urban-Radicals_hero.webp",
+        "heroVideo":  null,
+        "background":  null,
+        "gallery":  [
+                        {
+                            "src":  "projects/speakers-plinths/Speakers-Plinths-Urban-Radicals_1.jpg",
+                            "caption":  "Isometric."
+                        },
+                        {
+                            "src":  "projects/speakers-plinths/Speakers-Plinths-Urban-Radicals_2.webp",
+                            "caption":  "view 1."
+                        },
+                        {
+                            "src":  "projects/speakers-plinths/Speakers-Plinths-Urban-Radicals_3.webp",
+                            "caption":  "view 2."
+                        }
+                    ],
+        "position":  null,
+        "mapWidth":  null,
+        "anchor":  null,
+        "videoFocusX":  null,
+        "invert":  false
     }
 ];

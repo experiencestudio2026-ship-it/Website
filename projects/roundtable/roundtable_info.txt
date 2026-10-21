@@ -1,0 +1,25 @@
+# DEMOCRACY & SPACE - PROJECT INFO
+# Fill in the text after each KEYWORD: and keep the keywords exactly as they are.
+# Lines starting with # are ignored - you can delete them.
+
+TITLE: Roundtable
+LOCATION: London, UK
+AUTHOR: Urban Radicals
+YEAR: 2024
+SIZE: 14 m²
+CREDITS: Luke O’Donovan, Lorenzo Zandri
+
+# --- site editor settings (optional) ---
+INVERT: no
+
+TEXT:
+Urban Radicals is a collective of architects who are interested in the roots of things. Their projects stem from an exploration of everyday life, function and the informal. The project ‘An Alternative Parliament for London’ comprises four installations that explore democracy and public debate in the city of London. This project examines the possibility of shifting democratic debate from closed institutions to the streets, squares and shared spaces. Which spaces allow us to engage in debate and discussion – whether formal or informal – within the free, public space that is the city?
+
+Inspired by the traditional format of debates, the round-table format facilitates conversations that are both formal and informal. The table is constructed from prefabricated modular components and recycled materials, such as industrial concrete pipes, decking panels and electricity poles. The plants arranged on it tell stories of origin, evoking migratory movements to the United Kingdom and symbolising London’s vibrant multicultural communities.
+
+CAPTIONS:
+# one caption per image: the number matches the end of the file name
+# 1 = project-title_1.webp, 2 = project-title_2.webp, ...
+1: Isometric.
+2: Exterior view. 
+3: Top view.

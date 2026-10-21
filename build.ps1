@@ -7,7 +7,7 @@
 
   Folder rules (details: projects/README.txt) - the ending of a file name sets its role:
     projects/<folder>/              one folder = one project; folder name = project id in the URL
-      <name>_info.txt               texts (TITLE:, LOCATION:, AUTHOR:, YEAR:, TEXT:, CAPTIONS:)
+      <name>_info.txt               texts (TITLE:, LOCATION:, AUTHOR:, YEAR:, SIZE:, CREDITS:, TEXT:, CAPTIONS:)
       <name>_hero.png / .mp4        represents the project on the landing page (drawing or video)
       <name>_1.jpg, <name>_2.jpg    images on the project page, in number order
       <name>_background.mp4         optional background video of the project page
@@ -19,6 +19,7 @@
     MAP WIDTH: 300            width of the hero drawing / video on the map in px
     ANCHOR: 0.5, 1            point of the hero drawing that sits on the grid (fractions of width, height)
     VIDEO FOCUS: 0.5          which part of the video the map crop shows (0 = left ... 1 = right)
+    INVERT: no                show the hero image with its real colors (for photos)
 #>
 
 $ErrorActionPreference = 'Stop'
@@ -29,8 +30,8 @@ $outFile     = Join-Path $root 'js\projects-data.js'
 
 $imageExt = @('.png', '.jpg', '.jpeg', '.webp', '.gif', '.svg', '.avif')
 $videoExt = @('.mp4', '.webm')
-$keys     = @('TITLE', 'LOCATION', 'AUTHOR', 'YEAR', 'TEXT', 'CAPTIONS',
-              'POSITION', 'MAP WIDTH', 'ANCHOR', 'VIDEO FOCUS')
+$keys     = @('TITLE', 'LOCATION', 'AUTHOR', 'YEAR', 'SIZE', 'CREDITS', 'CREDIT', 'TEXT', 'CAPTIONS',
+              'POSITION', 'MAP WIDTH', 'ANCHOR', 'VIDEO FOCUS', 'INVERT')
 $invariant = [System.Globalization.CultureInfo]::InvariantCulture
 
 function Get-UrlPath($folder, $file) {
@@ -166,6 +167,11 @@ foreach ($dir in $folders) {
     }
   }
 
+  # CREDITS: or CREDIT:, without a leading "photography by" (the site adds that)
+  $credits = $f['CREDITS']
+  if (-not $credits) { $credits = $f['CREDIT'] }
+  if ($credits) { $credits = $credits -replace '^\s*photography\s+by\s*:?\s*', '' }
+
   $title = $f['TITLE']
   if (-not $title) { $title = $dir.Name }
 
@@ -175,6 +181,8 @@ foreach ($dir in $folders) {
     location    = $f['LOCATION']
     author      = $f['AUTHOR']
     year        = $f['YEAR']
+    size        = $f['SIZE']
+    credits     = $credits
     text        = $info.textJoined
     heroImage   = $(if ($heroImage) { Get-UrlPath $dir.Name $heroImage.Name } else { $null })
     heroVideo   = $(if ($heroVideo) { Get-UrlPath $dir.Name $heroVideo.Name } else { $null })
@@ -184,6 +192,7 @@ foreach ($dir in $folders) {
     mapWidth    = Get-Number $f['MAP WIDTH']
     anchor      = Get-Pair $f['ANCHOR']
     videoFocusX = Get-Number $f['VIDEO FOCUS']
+    invert      = $f['INVERT'] -notmatch '^\s*(no|false|0|off)\s*$'
   })
 }
 

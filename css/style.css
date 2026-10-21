@@ -178,6 +178,11 @@ input {
   filter: invert(1);
 }
 
+/* photos keep their real colors (INVERT: no in the project's _info.txt) */
+.card--no-invert img {
+  filter: none;
+}
+
 /* low-res video: the real video stays underneath, a tiny canvas on top */
 .card video {
   position: absolute;
@@ -503,6 +508,13 @@ input {
   margin: 0 0 1em;
   max-width: 38em;
   white-space: pre-line;
+}
+
+/* "Photography by: ..." under the project text */
+.project__text .project__credits {
+  margin-top: 1.6em;
+  font-size: 0.85em;
+  color: var(--color-muted);
 }
 
 .project__media {

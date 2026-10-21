@@ -61,7 +61,10 @@ what the file is for - so please keep it exactly.
 
 
 6. TEXTS (_info.txt)
-   - keep the KEYWORDS: (TITLE:, LOCATION:, AUTHOR:, YEAR:, TEXT:, CAPTIONS:)
+   - keep the KEYWORDS: (TITLE:, LOCATION:, AUTHOR:, YEAR:, SIZE:, CREDITS:, TEXT:, CAPTIONS:)
+   - SIZE: floor area of the project, e.g. 35 m²
+   - CREDITS: the photographers' names, shown as "Photography by: ..."
+     (leave empty if there are none)
    - save as UTF-8 (default in most editors) so special characters survive
 
 

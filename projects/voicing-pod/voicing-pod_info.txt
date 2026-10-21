@@ -1,0 +1,25 @@
+# DEMOCRACY & SPACE - PROJECT INFO
+# Fill in the text after each KEYWORD: and keep the keywords exactly as they are.
+# Lines starting with # are ignored - you can delete them.
+
+TITLE: Voicing Pod
+LOCATION: London, UK
+AUTHOR: Urban Radicals
+YEAR: 2024
+SIZE: 4 m²
+CREDITS: Lorenzo Zandri, Nasios Varnavas, Luke O’Donovan
+
+# --- site editor settings (optional) ---
+INVERT: no
+
+TEXT:
+Urban Radicals is a collective of architects who are interested in the roots of things. Their projects stem from an exploration of everyday life, function and the informal. The project ‘An Alternative Parliament for London’ comprises four installations that explore democracy and public debate in the city of London. This project examines the possibility of shifting democratic debate from closed institutions to the streets, squares and shared spaces. Which spaces allow us to engage in debate and discussion – whether formal or informal – within the free, public space that is the city?
+
+Situated deep within the iconic Lloyd’s building, this intimate space is dedicated to conversations and podcasts. Inspired by the functional aesthetic of the building that houses it, its technical installations and the surrounding telephone boxes, this ‘pod’ suggests that such intimate spaces deserve to be regarded as buildings in their own right, as they often facilitate important activities facing onto the street and bring cultural and aesthetic value to shared urban spaces.
+
+CAPTIONS:
+# one caption per image: the number matches the end of the file name
+# 1 = project-title_1.webp, 2 = project-title_2.webp, ...
+1: Isometric.
+2: Exterior view. 
+3: Movement of the door.
