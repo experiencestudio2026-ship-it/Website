@@ -11,6 +11,7 @@
                                     AUTHOR = who made the project shown; CONTRIBUTED BY = the student who wrote the entry
       <name>_hero.png / .mp4        represents the project on the landing page (drawing or video)
       <name>_1.jpg, <name>_2.jpg    images on the project page, in number order
+                                    (a numbered .mp4 is shown as a video in that place)
       <name>_background.mp4         optional background video of the project page
                                     (a hero video is used when there is none)
     Folders starting with _ or . are ignored (e.g. _TEMPLATE, or to hide a project).
@@ -136,9 +137,9 @@ foreach ($dir in $folders) {
   $background = $videos | Where-Object { $_.BaseName -match '_background$' } | Select-Object -First 1
   if (-not $background) { $background = $heroVideo }
 
-  # --- <name>_1, <name>_2, ...: images on the project page ---
+  # --- <name>_1, <name>_2, ...: images (or videos) on the project page ---
   $gallery = New-Object System.Collections.ArrayList
-  $numbered = $images |
+  $numbered = ($images + $videos) |
     Where-Object { $_.BaseName -match '_(\d+)$' } |
     Sort-Object @{ Expression = { [int]([regex]::Match($_.BaseName, '(\d+)$').Value) } }, Name
   foreach ($img in $numbered) {

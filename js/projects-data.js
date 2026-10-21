@@ -96,7 +96,7 @@ window.PROJECTS_DATA = [
         "author":  "Urban Radicals",
         "year":  "2024",
         "size":  "35 m²",
-        "contributor":  "",
+        "contributor":  "Ethel Halimi",
         "credits":  "Lorenzo Zandri, Luke O’Donovan",
         "text":  "Urban Radicals is a collective of architects who are interested in the roots of things. Their projects stem from an exploration of everyday life, function and the informal. The project ‘An Alternative Parliament for London’ comprises four installations that explore democracy and public debate in the city of London. This project examines the possibility of shifting democratic debate from closed institutions to the streets, squares and shared spaces. Which spaces allow us to engage in debate and discussion – whether formal or informal – within the free, public space that is the city?\n\nThis installation is an open-air auditorium, serving as a space for public debates and performances. Modelled on venues for political debates, the aim here is to bring the process of democratic debate into the city and onto the streets. The structure therefore takes the form of a continuous horseshoe-shaped bench, situated beneath an inflatable canopy, which fosters a sense of community and encourages reflection.",
         "heroImage":  "projects/assembly/Assembly-Urban-Radicals_hero.webp",
@@ -125,7 +125,7 @@ window.PROJECTS_DATA = [
         "author":  "Urban Radicals",
         "year":  "2024",
         "size":  "4 m²",
-        "contributor":  "",
+        "contributor":  "Ethel Halimi",
         "credits":  "Lorenzo Zandri, Nasios Varnavas, Luke O’Donovan",
         "text":  "Urban Radicals is a collective of architects who are interested in the roots of things. Their projects stem from an exploration of everyday life, function and the informal. The project ‘An Alternative Parliament for London’ comprises four installations that explore democracy and public debate in the city of London. This project examines the possibility of shifting democratic debate from closed institutions to the streets, squares and shared spaces. Which spaces allow us to engage in debate and discussion – whether formal or informal – within the free, public space that is the city?\n\nSituated deep within the iconic Lloyd’s building, this intimate space is dedicated to conversations and podcasts. Inspired by the functional aesthetic of the building that houses it, its technical installations and the surrounding telephone boxes, this ‘pod’ suggests that such intimate spaces deserve to be regarded as buildings in their own right, as they often facilitate important activities facing onto the street and bring cultural and aesthetic value to shared urban spaces.",
         "heroImage":  "projects/voicing-pod/Voicing-Pod-Urban_Radicals_hero.webp",
@@ -158,7 +158,7 @@ window.PROJECTS_DATA = [
         "author":  "Urban Radicals",
         "year":  "2024",
         "size":  "14 m²",
-        "contributor":  "",
+        "contributor":  "Ethel Halimi",
         "credits":  "Luke O’Donovan, Lorenzo Zandri",
         "text":  "Urban Radicals is a collective of architects who are interested in the roots of things. Their projects stem from an exploration of everyday life, function and the informal. The project ‘An Alternative Parliament for London’ comprises four installations that explore democracy and public debate in the city of London. This project examines the possibility of shifting democratic debate from closed institutions to the streets, squares and shared spaces. Which spaces allow us to engage in debate and discussion – whether formal or informal – within the free, public space that is the city?\n\nInspired by the traditional format of debates, the round-table format facilitates conversations that are both formal and informal. The table is constructed from prefabricated modular components and recycled materials, such as industrial concrete pipes, decking panels and electricity poles. The plants arranged on it tell stories of origin, evoking migratory movements to the United Kingdom and symbolising London’s vibrant multicultural communities.",
         "heroImage":  "projects/roundtable/Roundtable-Urban-Radicals_hero.webp",
@@ -191,7 +191,7 @@ window.PROJECTS_DATA = [
         "author":  "Urban Radicals",
         "year":  "2024",
         "size":  "17 m²",
-        "contributor":  "",
+        "contributor":  "Ethel Halimi",
         "credits":  "Lorenzo Zandri, Nasios Varnavas, Luke O’Donovan",
         "text":  "Urban Radicals is a collective of architects who are interested in the roots of things. Their projects stem from an exploration of everyday life, function and the informal. The project ‘An Alternative Parliament for London’ comprises four installations that explore democracy and public debate in the city of London. This project examines the possibility of shifting democratic debate from closed institutions to the streets, squares and shared spaces. Which spaces allow us to engage in debate and discussion – whether formal or informal – within the free, public space that is the city?\n\nDrawing on Aristotle’s Peripatetic school of philosophy, this series of platforms features surfaces on which residents can write and share their thoughts.  Spanning London’s historic district, this installation encourages the expression of personal opinions, the sharing of thoughts on the city, and the creation of informal discussions and performances along a walkable route. This street furniture also serves as skateboarding features.",
         "heroImage":  "projects/speakers-plinths/Speakers-Plinths-Urban-Radicals_hero.webp",
@@ -345,6 +345,47 @@ window.PROJECTS_DATA = [
                         {
                             "src":  "projects/typology-circle/TYPOLOGY_Circle_4.webp",
                             "caption":  "The United Nations Security Council meeting, New York, 2025."
+                        }
+                    ],
+        "position":  null,
+        "mapWidth":  null,
+        "anchor":  null,
+        "videoFocusX":  null,
+        "invert":  false
+    },
+    {
+        "id":  "typology-semicircle",
+        "title":  "Semicircle Typology",
+        "location":  null,
+        "author":  null,
+        "year":  null,
+        "size":  null,
+        "contributor":  "Raihane Lamane",
+        "credits":  "Senate TV; video: Assemblée nationale (YouTube)",
+        "text":  "The semicircular typology has its origins in Ancient Greece, particularly at the Pnyx in Athens, where citizens gathered to debate and make political decisions. The natural slope of the site allowed participants to face a common speaking area, establishing a clear relationship between speakers and listeners. This principle later influenced the organisation of political assemblies and parliamentary chambers.\n\nToday, the semicircle can be found in institutions such as the French National Assembly, where elected representatives face a central speaking platform and the presiding authority. Unlike a complete circle, this arrangement is oriented towards a specific focal point, structuring the direction of attention and the exchange of arguments.\n\nThe power of the semicircle lies in its ability to organise debate while establishing a relationship of hierarchy and power. By directing participants towards a speaker, it distinguishes the person addressing the assembly from those listening. This spatial orientation creates a relationship between the observer and the observed, between the authority that speaks and the collective that receives the speech. Unlike the non-oriented circular typology, which distributes visual relationships around a shared centre, the semicircle establishes a privileged direction and therefore a more explicit hierarchy. Although it allows representatives to see one another, it simultaneously structures who is looked at, who speaks and who holds the floor.",
+        "heroImage":  "projects/typology-semicircle/TYPOLOGY_Semicircle_hero.png",
+        "heroVideo":  null,
+        "background":  null,
+        "gallery":  [
+                        {
+                            "src":  "projects/typology-semicircle/TYPOLOGY_Semicircle_1.webp",
+                            "caption":  "Plan of the Pnyx Assembly, 326 BC."
+                        },
+                        {
+                            "src":  "projects/typology-semicircle/TYPOLOGY_Semicircle_2.webp",
+                            "caption":  "Plan of the Chamber of Peers, 1819."
+                        },
+                        {
+                            "src":  "projects/typology-semicircle/TYPOLOGY_Semicircle_3.webp",
+                            "caption":  "Conference hall of the Chamber of Deputies, Paris, 1843."
+                        },
+                        {
+                            "src":  "projects/typology-semicircle/TYPOLOGY_Semicircle_4.webp",
+                            "caption":  "Donald Trump process towards the United States Senate, 2020."
+                        },
+                        {
+                            "src":  "projects/typology-semicircle/TYPOLOGY_Semicircle_5.mp4",
+                            "caption":  "Public debate of the National Assembly, 20 October 2026."
                         }
                     ],
         "position":  null,

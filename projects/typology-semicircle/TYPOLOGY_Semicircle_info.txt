@@ -1,0 +1,27 @@
+# DEMOCRACY & SPACE - PROJECT INFO
+# Fill in the text after each KEYWORD: and keep the keywords exactly as they are.
+# Lines starting with # are ignored - you can delete them.
+
+TITLE: Semicircle Typology
+CONTRIBUTED BY: Raihane Lamane
+
+CREDITS: Senate TV; video: Assemblée nationale (YouTube)
+
+# --- site editor settings (optional) ---
+INVERT: no
+
+TEXT:
+The semicircular typology has its origins in Ancient Greece, particularly at the Pnyx in Athens, where citizens gathered to debate and make political decisions. The natural slope of the site allowed participants to face a common speaking area, establishing a clear relationship between speakers and listeners. This principle later influenced the organisation of political assemblies and parliamentary chambers.
+
+Today, the semicircle can be found in institutions such as the French National Assembly, where elected representatives face a central speaking platform and the presiding authority. Unlike a complete circle, this arrangement is oriented towards a specific focal point, structuring the direction of attention and the exchange of arguments.
+
+The power of the semicircle lies in its ability to organise debate while establishing a relationship of hierarchy and power. By directing participants towards a speaker, it distinguishes the person addressing the assembly from those listening. This spatial orientation creates a relationship between the observer and the observed, between the authority that speaks and the collective that receives the speech. Unlike the non-oriented circular typology, which distributes visual relationships around a shared centre, the semicircle establishes a privileged direction and therefore a more explicit hierarchy. Although it allows representatives to see one another, it simultaneously structures who is looked at, who speaks and who holds the floor.
+
+CAPTIONS:
+# one caption per image: the number matches the end of the file name
+# 1 = project-title_1.webp, 2 = project-title_2.webp, ...
+1: Plan of the Pnyx Assembly, 326 BC.
+2: Plan of the Chamber of Peers, 1819.
+3: Conference hall of the Chamber of Deputies, Paris, 1843.
+4: Donald Trump process towards the United States Senate, 2020.
+5: Public debate of the National Assembly, 20 October 2026.

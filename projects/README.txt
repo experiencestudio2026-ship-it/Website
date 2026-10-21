@@ -23,6 +23,7 @@ FILE NAMES - the ending sets the function
                                 or a video (.mp4 .webm) - if both exist,
                                 the video is used
     <name>_1.jpg, _2, _3 ...    images on the project page, in this order
+                                (<name>_4.mp4 puts a video in that place)
     <name>_info.txt             title, location, author, year, text, captions
     <name>_background.mp4       optional page background video
                                 (without it, a _hero video is used)

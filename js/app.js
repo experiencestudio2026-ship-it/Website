@@ -57,6 +57,16 @@
     return (h >>> 0) / 4294967296;
   };
 
+  // every video on the site: muted autoplay (the only kind phones allow),
+  // endless loop, inline on iPhones instead of fullscreen
+  const autoplayVideo = (src, extra = {}) => {
+    const v = document.createElement("video");
+    Object.assign(v, { src, muted: true, loop: true, autoplay: true, playsInline: true, ...extra });
+    ["muted", "loop", "autoplay", "playsinline"].forEach((a) => v.setAttribute(a, ""));
+    v.play().catch(() => {});
+    return v;
+  };
+
   const el = (tag, className, text) => {
     const node = document.createElement(tag);
     if (className) node.className = className;
@@ -184,13 +194,9 @@
 
     const imageSrc = p.heroImage || (p.gallery[0] && p.gallery[0].src);
     if (p.heroVideo) {
-      const video = document.createElement("video");
-      Object.assign(video, { src: p.heroVideo, muted: true, loop: true, autoplay: true, playsInline: true });
-      video.setAttribute("muted", "");
-      video.setAttribute("playsinline", "");
+      const video = autoplayVideo(p.heroVideo);
       video.addEventListener("loadedmetadata", () => sizeCard(p, video.videoWidth, video.videoHeight));
       media.append(video, lowResCanvas(video));
-      video.play().catch(() => {});
       p.video = video;
     } else if (imageSrc) {
       const img = document.createElement("img");
@@ -281,6 +287,22 @@
   };
   ["pointerup", "touchend", "keydown"].forEach((type) =>
     window.addEventListener(type, allowSound, { passive: true }));
+
+  // keep every video running: the cards always, the project's own videos while it
+  // is open. Phones in power-saving mode only start videos after a first tap, and
+  // browsers pause them in background tabs - so try again on both occasions.
+  function resumeVideos(withPanel = true) {
+    const panelVideos = openId && withPanel ? [...panelContent.querySelectorAll("video")] : [];
+    [...videos.map((p) => p.video), ...panelVideos].forEach((v) => {
+      if (v.paused) v.play().catch(() => {});
+    });
+  }
+  // on a tap only the cards: a tap on a project video's pause button must stay paused
+  ["pointerup", "touchend"].forEach((type) =>
+    window.addEventListener(type, () => resumeVideos(false), { passive: true }));
+  document.addEventListener("visibilitychange", () => {
+    if (!document.hidden) resumeVideos();
+  });
 
   function updateSound(dt) {
     if (!soundAllowed || !videos.length) return;
@@ -511,10 +533,8 @@
     const media = el("div", "project__media");
     const video = p.background || p.heroVideo;
     if (video) {
-      const v = document.createElement("video");
-      Object.assign(v, { src: video, muted: true, loop: true, autoplay: true, playsInline: true, controls: true });
-      v.setAttribute("muted", "");
-      v.setAttribute("playsinline", "");
+      const v = autoplayVideo(video, { controls: true });   // controls: visitors can turn the sound on
+      v.addEventListener("loadedmetadata", updatePanelDot);
       const fig = el("figure", "project__figure");
       fig.append(v);
       media.append(fig);
@@ -522,12 +542,19 @@
     const images = p.gallery.length ? p.gallery : p.heroImage ? [{ src: p.heroImage, caption: "" }] : [];
     images.forEach((item) => {
       const fig = el("figure", "project__figure");
-      const img = document.createElement("img");
-      img.src = item.src;
-      img.alt = item.caption || p.title;
-      img.loading = "lazy";
-      img.addEventListener("load", updatePanelDot);   // content got taller
-      fig.append(img);
+      if (/\.(mp4|webm)$/i.test(item.src)) {
+        // a numbered video in the gallery: plays muted in a loop, controls turn the sound on
+        const v = autoplayVideo(item.src, { controls: true });
+        v.addEventListener("loadedmetadata", updatePanelDot);
+        fig.append(v);
+      } else {
+        const img = document.createElement("img");
+        img.src = item.src;
+        img.alt = item.caption || p.title;
+        img.loading = "lazy";
+        img.addEventListener("load", updatePanelDot);   // content got taller
+        fig.append(img);
+      }
       if (item.caption) fig.append(el("figcaption", "project__caption", item.caption));
       media.append(fig);
     });
@@ -541,6 +568,7 @@
   function openPanel(p) {
     if (openId !== p.id) buildPanel(p);
     openId = p.id;
+    resumeVideos();                               // reopened: its videos were paused on close
     document.title = `${p.title} — Democracy & Space`;
     panel.classList.add("is-open");
     panel.setAttribute("aria-hidden", "false");
