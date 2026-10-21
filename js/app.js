@@ -597,6 +597,11 @@
   [...projects].sort((a, b) => a.title.localeCompare(b.title))
     .forEach((p) => indexList.append(resultItem(p)));
 
+  // image credits in the Impressum, from CREDITS: in each _info.txt
+  const creditsList = document.getElementById("credits-list");
+  [...projects].filter((p) => p.credits).sort((a, b) => a.title.localeCompare(b.title))
+    .forEach((p) => creditsList.append(el("li", null, `${p.title}: photography by ${p.credits}`)));
+
   // ---- Search ("*" lists everything) -------------------------------------------
   searchInput.addEventListener("input", () => {
     const q = searchInput.value.trim().toLowerCase();

@@ -1,0 +1,47 @@
+# DEMOCRACY & SPACE - PROJECT INFO
+# Fill in the text after each KEYWORD: and keep the keywords exactly as they are.
+# Lines starting with # are ignored - you can delete them.
+
+TITLE: The Sputnik Affair
+LOCATION: Weimar, Germany
+YEAR: 1988
+CREDITS: Jürgen Würtele; Archiv der Moderne, Bauhaus-Universität Weimar
+
+# --- site editor settings (optional) ---
+INVERT: no
+
+TEXT:
+The Peaceful Revolution and the Role of Students in the Democratization of the HAB Weimar
+
+The two significant political events that link the University of Architecture and Civil Engineering in Weimar to expressions of general opposition were the “Sputnik Affair” of November 1988 and the dissenting votes in the local elections of May 1989.
+Sputnik Affair
+
+After the Soviet magazine “Sputnik” published the article “Stalin and the War” in its German-language October 1988 issue, thereby holding the Soviet Union partly responsible for the invasion of Poland in 1939, the GDR government blocked the distribution of the following issue on November 18th, 1988. The “Sputnik ban” also sparked protests and expressions of solidarity in Weimar. When leaflets were found in numerous university buildings in the early morning hours of Wednesday, November 23, 1988, the university administration, under pressure from the district leadership of the SED, responded by expelling numerous students who had come under suspicion.
+The main points of this protest were:
+- Criticism of government censorship: The students made it clear that they would not passively accept government interference with freedom of information and freedom of expression.
+- Challenging political authority: They questioned the legitimacy of decisions made without free public discussion.
+- Solidarity and political awareness: The protests made it clear that dissatisfaction affected not only individuals but also other members of the university community.
+
+The May 1989 Local Elections: A Sign of Political Opposition
+The intimidation continued into 1989. In the last elections before the political upheaval, on Sunday, May 7th 1989, approximately 15% of the students voted against the official slate of candidates, which the university’s party leadership attributed to a political stance that did not conform to the system. This led to further disciplinary proceedings.
+In the wake of the “Sputnik Affair” and the elections, the university was subjected to numerous disciplinary proceedings, accompanied by criticism that an atmosphere of general ideological weakness prevailed there.
+From the local elections in May 1989 until October, the situation appeared relatively calm from the outside. The process of fundamental institutional renewal at the University of Architecture and Civil Engineering began in late 1989. 
+
+The Round Table
+In January 1990, the “Round Table” was convened as a mechanism for overseeing the reform and actively shaping its course. It included representatives from various groups within the university community. Its members served on investigative commissions, advised the Academic Council, and prepared for the establishment of the university’s governing body. Of central importance were the investigative commission on the “Sputnik” affair and the rehabilitation of those affected. 
+Other important aspects included: 
+- Coming to terms with the past: The previously sanctioned protests were investigated, and the measures taken against those affected were reviewed.
+- New forms of participation: Various groups within the university were given opportunities to contribute to reforms.
+- Changes in decision-making structures: University development increasingly became the subject of joint deliberation rather than being guided exclusively by party politics.
+As part of the democratization process, structural measures were adopted at the Senate meeting on May 11th, in 1990, which foreshadowed the profile of today’s Bauhaus-University Weimar. These included the formation of five faculties and the potential addition of a Faculty of Fine Arts. However, personnel changes were initially slow to materialize. Although the Department of “Marxism-Leninism” was renamed, the staff of that department remained in their positions. Extensive personnel reviews began in November 1990.
+Weimar’s university buildings symbolize a new beginning on the path to European modernity. Founded in 1860 as the Grand Ducal Art School, the institution expanded and reinvented itself as a design school under Henry van de Velde. He was a pioneer of the Bauhaus movement, which today gives the university its name.
+
+Conclusion:
+The student protests at HAB Weimar contributed to the democratization of the university on several levels. First, students resisted state control over information and the expression of political opinions. Second, through their votes against the ruling party in the local elections, they made it clear that official political support was not shared by everyone. Third, in the wake of the Peaceful Revolution, new opportunities arose to examine existing power structures and reorganize the university. It is important to distinguish between the immediate consequences of the protests and long-term changes: In 1988, the protests initially led to repression and expulsions. It was not until the political upheaval of 1989–90 that the space for more comprehensive democratization opened up. The Round Table thus became a concrete instrument of participation and coming to terms with the past. Overall, the protests were therefore not a single event that immediately democratized higher education, but rather an important contribution to a longer process of change. They exposed the limitations of the existing system and created experiences of dissent, solidarity, and co-determination that were significant for the subsequent reform of higher education.
+
+CAPTIONS:
+# one caption per image: the number matches the end of the file name
+# 1 = project-title_1.webp, 2 = project-title_2.webp, ...
+1: The Sputnik Affair, the “Hands Off!” flyer was directed against the suspension of distribution of the magazine “Sputnik”, Weimar.
+2: The Sputnik Affair, “The Round Table”, Weimar.
+3: The Sputnik Affair, demonstration at Herderplatz, Weimar.

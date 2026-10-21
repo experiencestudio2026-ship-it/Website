@@ -56,41 +56,6 @@ window.PROJECTS_DATA = [
         "invert":  true
     },
     {
-        "id":  "mustermann_example-project",
-        "title":  "Example Project",
-        "location":  "Berlin, Germany",
-        "author":  "Max Mustermann",
-        "year":  "2026",
-        "size":  null,
-        "credits":  null,
-        "text":  "This is the project text. It is shown next to your images on the project page\nand can be as long as you like.\n\nLeave an empty line to start a new paragraph.",
-        "heroImage":  "projects/mustermann_example-project/example-project_hero.webp",
-        "heroVideo":  null,
-        "background":  null,
-        "gallery":  [
-                        {
-                            "src":  "projects/mustermann_example-project/example-project_1.png",
-                            "caption":  "Floor plan, 1:200."
-                        },
-                        {
-                            "src":  "projects/mustermann_example-project/example-project_2.webp",
-                            "caption":  "Interior view of the assembly hall."
-                        },
-                        {
-                            "src":  "projects/mustermann_example-project/example-project_3.webp",
-                            "caption":  "Detail of the stair."
-                        }
-                    ],
-        "position":  null,
-        "mapWidth":  360,
-        "anchor":  [
-                       0.444,
-                       0.618
-                   ],
-        "videoFocusX":  null,
-        "invert":  true
-    },
-    {
         "id":  "un-security-council",
         "title":  "United Nations Security Council Chamber",
         "location":  "New York, United States",
@@ -301,6 +266,38 @@ window.PROJECTS_DATA = [
                         {
                             "src":  "projects/the-velvet-revolution/the-velvet-revolution_3.webp",
                             "caption":  "The Velvet Revolution, Protest, Prague."
+                        }
+                    ],
+        "position":  null,
+        "mapWidth":  null,
+        "anchor":  null,
+        "videoFocusX":  null,
+        "invert":  false
+    },
+    {
+        "id":  "the-sputnik-affair",
+        "title":  "The Sputnik Affair",
+        "location":  "Weimar, Germany",
+        "author":  null,
+        "year":  "1988",
+        "size":  null,
+        "credits":  "Jürgen Würtele; Archiv der Moderne, Bauhaus-Universität Weimar",
+        "text":  "The Peaceful Revolution and the Role of Students in the Democratization of the HAB Weimar\n\nThe two significant political events that link the University of Architecture and Civil Engineering in Weimar to expressions of general opposition were the “Sputnik Affair” of November 1988 and the dissenting votes in the local elections of May 1989.\nSputnik Affair\n\nAfter the Soviet magazine “Sputnik” published the article “Stalin and the War” in its German-language October 1988 issue, thereby holding the Soviet Union partly responsible for the invasion of Poland in 1939, the GDR government blocked the distribution of the following issue on November 18th, 1988. The “Sputnik ban” also sparked protests and expressions of solidarity in Weimar. When leaflets were found in numerous university buildings in the early morning hours of Wednesday, November 23, 1988, the university administration, under pressure from the district leadership of the SED, responded by expelling numerous students who had come under suspicion.\nThe main points of this protest were:\n- Criticism of government censorship: The students made it clear that they would not passively accept government interference with freedom of information and freedom of expression.\n- Challenging political authority: They questioned the legitimacy of decisions made without free public discussion.\n- Solidarity and political awareness: The protests made it clear that dissatisfaction affected not only individuals but also other members of the university community.\n\nThe May 1989 Local Elections: A Sign of Political Opposition\nThe intimidation continued into 1989. In the last elections before the political upheaval, on Sunday, May 7th 1989, approximately 15% of the students voted against the official slate of candidates, which the university’s party leadership attributed to a political stance that did not conform to the system. This led to further disciplinary proceedings.\nIn the wake of the “Sputnik Affair” and the elections, the university was subjected to numerous disciplinary proceedings, accompanied by criticism that an atmosphere of general ideological weakness prevailed there.\nFrom the local elections in May 1989 until October, the situation appeared relatively calm from the outside. The process of fundamental institutional renewal at the University of Architecture and Civil Engineering began in late 1989.\n\nThe Round Table\nIn January 1990, the “Round Table” was convened as a mechanism for overseeing the reform and actively shaping its course. It included representatives from various groups within the university community. Its members served on investigative commissions, advised the Academic Council, and prepared for the establishment of the university’s governing body. Of central importance were the investigative commission on the “Sputnik” affair and the rehabilitation of those affected.\nOther important aspects included:\n- Coming to terms with the past: The previously sanctioned protests were investigated, and the measures taken against those affected were reviewed.\n- New forms of participation: Various groups within the university were given opportunities to contribute to reforms.\n- Changes in decision-making structures: University development increasingly became the subject of joint deliberation rather than being guided exclusively by party politics.\nAs part of the democratization process, structural measures were adopted at the Senate meeting on May 11th, in 1990, which foreshadowed the profile of today’s Bauhaus-University Weimar. These included the formation of five faculties and the potential addition of a Faculty of Fine Arts. However, personnel changes were initially slow to materialize. Although the Department of “Marxism-Leninism” was renamed, the staff of that department remained in their positions. Extensive personnel reviews began in November 1990.\nWeimar’s university buildings symbolize a new beginning on the path to European modernity. Founded in 1860 as the Grand Ducal Art School, the institution expanded and reinvented itself as a design school under Henry van de Velde. He was a pioneer of the Bauhaus movement, which today gives the university its name.\n\nConclusion:\nThe student protests at HAB Weimar contributed to the democratization of the university on several levels. First, students resisted state control over information and the expression of political opinions. Second, through their votes against the ruling party in the local elections, they made it clear that official political support was not shared by everyone. Third, in the wake of the Peaceful Revolution, new opportunities arose to examine existing power structures and reorganize the university. It is important to distinguish between the immediate consequences of the protests and long-term changes: In 1988, the protests initially led to repression and expulsions. It was not until the political upheaval of 1989–90 that the space for more comprehensive democratization opened up. The Round Table thus became a concrete instrument of participation and coming to terms with the past. Overall, the protests were therefore not a single event that immediately democratized higher education, but rather an important contribution to a longer process of change. They exposed the limitations of the existing system and created experiences of dissent, solidarity, and co-determination that were significant for the subsequent reform of higher education.",
+        "heroImage":  "projects/the-sputnik-affair/the-sputnik-affair_hero.webp",
+        "heroVideo":  null,
+        "background":  null,
+        "gallery":  [
+                        {
+                            "src":  "projects/the-sputnik-affair/the-sputnik-affair_1.webp",
+                            "caption":  "The Sputnik Affair, the “Hands Off!” flyer was directed against the suspension of distribution of the magazine “Sputnik”, Weimar."
+                        },
+                        {
+                            "src":  "projects/the-sputnik-affair/the-sputnik-affair_2.webp",
+                            "caption":  "The Sputnik Affair, “The Round Table”, Weimar."
+                        },
+                        {
+                            "src":  "projects/the-sputnik-affair/the-sputnik-affair_3.webp",
+                            "caption":  "The Sputnik Affair, demonstration at Herderplatz, Weimar."
                         }
                     ],
         "position":  null,
