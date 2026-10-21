@@ -1,0 +1,61 @@
+# DEMOCRACY & SPACE - PROJECT INFO
+# Fill in the text after each KEYWORD: and keep the keywords exactly as they are.
+# Lines starting with # are ignored - you can delete them.
+
+TITLE: The Italian Student Movement of 1968
+LOCATION: Venice, Rome, Milan, Italy
+AUTHOR: Author unknown
+YEAR: 1967–1968
+SIZE:
+CREDITS:
+
+# --- site editor settings (optional) ---
+INVERT: no
+
+TEXT:
+The Italian student movement of 1968 emerged during a period of profound social, economic and cultural change. Young people challenged institutional authoritarianism, social inequalities and a university system they considered elitist and undemocratic. Influenced by international protests, opposition to the Vietnam War and the ideas of the New Left, including the French New Left, the movement spread rapidly throughout Italian universities and schools. Through occupations, assemblies and demonstrations, students demanded greater freedom, participation and equality. During 1968, the protests became more radical and increasingly connected with workers’ struggles, contributing to a broader wave of social mobilization that would profoundly shape Italy in the following years.
+
+1966–1967: The Origins of the Movement
+
+- 1966: The first signs of protest.
+Protests against the elitist nature of universities, the authoritarianism of professors and the presence of neo-fascist groups on university campuses began to grow. The death of student Paolo Rossi at the University of Rome in May 1966 sparked demonstrations and protests.
+- February 1967: The occupation of Palazzo Campana in Turin.
+Students occupied the university building, challenging the organization of academic studies and demanding a more democratic and accessible university system.
+- 1967: Protests at IUAV in Venice.
+Students at the Istituto Universitario di Architettura di Venezia (University Institute of Architecture of Venice) began a series of protests that culminated in a lengthy occupation known as the “Hundred Days Occupation.” They challenged traditional teaching methods and called for a rethinking of the relationship between architectural education, society and collective needs.
+- November–December 1967: Occupations spread.
+Trento, Pisa and other universities became important centers of protest. Student assemblies and political documents emerged, challenging the university system and academic hierarchies.
+
+1968: The Year of Protest
+
+- January–February: Occupations spread.
+Protests reached universities in Rome, Turin, Milan, Trento, Pisa, Bologna and Naples. Student assemblies became spaces for discussion and collective decision-making.
+- 1 March: The Battle of Valle Giulia in Rome.
+Following the police eviction of the Faculty of Architecture at Sapienza University, students confronted the police in violent clashes near the faculty, in the Valle Giulia area. The incident became one of the defining symbols of the Italian student movement.
+- 16 March: Clashes at Sapienza University in Rome.
+Neo-fascist militants attacked students gathered in the Faculty of Humanities. The clashes intensified political tensions within the university.
+- March: Protests at the Catholic University of Milan.
+Students protested against the university’s organizational structure and demanded greater autonomy and participation. The occupation and subsequent eviction contributed to the expansion of the movement.
+- Spring: The protests spread throughout society.
+Demonstrations became connected with international struggles, particularly opposition to the Vietnam War. Students challenged not only the university system but also capitalism, social inequalities and hierarchical structures.
+- May: The occupation of the 14th Milan Triennale.
+On 30 May, the opening day of the exhibition, protesters and artists occupied the Triennale, including Giancarlo De Carlo. The protest challenged the role of cultural institutions and the elitist nature of art and architecture, calling for a closer relationship between culture and society.
+- May–June: The influence of the French May 1968 protests.
+The protests in France strengthened the international momentum of the student movement. Occupations and demonstrations continued in Italy, while dialogue with the working class grew.
+- Autumn: Closer ties with workers’ struggles.
+Student protests became increasingly intertwined with workers’ demands. Discussions focused on wages, working conditions, factory hierarchies and the possibility of transforming society.
+- 31 December: The protest outside La Bussola nightclub.
+In Marina di Pietrasanta, a demonstration against social inequality outside the La Bussola nightclub was suppressed by the police. Sixteen-year-old Soriano Ceccanti was seriously injured and left paralyzed.
+
+1969: From Students to Workers
+
+- January–spring: Protests continue in schools.
+Secondary school students increasingly joined the demonstrations, demanding the right to hold assemblies, greater democracy in education and a reduction in educational inequalities.
+
+
+CAPTIONS:
+# one caption per image: the number matches the end of the file name
+# 1 = project-title_1.webp, 2 = project-title_2.webp, ...
+1: Entrance to the Triennale building during occupation, Milan, 1968.
+2: The roof of the IUAV University library during the "100 day" occupation, Venice, 1968.
+3: Battle of Valle Giulia, 1 March 1968, Rome.

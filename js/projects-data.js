@@ -11,8 +11,8 @@ window.PROJECTS_DATA = [
         "credits":  null,
         "text":  "Placeholder text for the German Bundestag.",
         "heroImage":  null,
-        "heroVideo":  "projects/bundestag/bundestag_hero.mp4",
-        "background":  "projects/bundestag/bundestag_hero.mp4",
+        "heroVideo":  "projects/bundestag/Bundestag_hero.mp4",
+        "background":  "projects/bundestag/Bundestag_hero.mp4",
         "gallery":  [
                         {
                             "src":  "projects/bundestag/bundestag_1.png",
@@ -38,8 +38,8 @@ window.PROJECTS_DATA = [
         "credits":  null,
         "text":  "Placeholder text for the House of Commons.",
         "heroImage":  null,
-        "heroVideo":  "projects/house-of-commons/house-of-commons_hero.mp4",
-        "background":  "projects/house-of-commons/house-of-commons_hero.mp4",
+        "heroVideo":  "projects/house-of-commons/house-of-commons_Hero.mp4",
+        "background":  "projects/house-of-commons/house-of-commons_Hero.mp4",
         "gallery":  [
                         {
                             "src":  "projects/house-of-commons/house-of-commons_1.webp",
@@ -108,7 +108,7 @@ window.PROJECTS_DATA = [
                             "caption":  ""
                         },
                         {
-                            "src":  "projects/un-security-council/un-security-council_2.jpg",
+                            "src":  "projects/un-security-council/un-security-council_2.webp",
                             "caption":  ""
                         }
                     ],
@@ -163,7 +163,7 @@ window.PROJECTS_DATA = [
         "background":  null,
         "gallery":  [
                         {
-                            "src":  "projects/voicing-pod/Voicing-Pod-Urban-Radicals_1.jpg",
+                            "src":  "projects/voicing-pod/Voicing-Pod-Urban-Radicals_1.webp",
                             "caption":  "Isometric."
                         },
                         {
@@ -227,7 +227,7 @@ window.PROJECTS_DATA = [
         "background":  null,
         "gallery":  [
                         {
-                            "src":  "projects/speakers-plinths/Speakers-Plinths-Urban-Radicals_1.jpg",
+                            "src":  "projects/speakers-plinths/Speakers-Plinths-Urban-Radicals_1.webp",
                             "caption":  "Isometric."
                         },
                         {
@@ -237,6 +237,70 @@ window.PROJECTS_DATA = [
                         {
                             "src":  "projects/speakers-plinths/Speakers-Plinths-Urban-Radicals_3.webp",
                             "caption":  "view 2."
+                        }
+                    ],
+        "position":  null,
+        "mapWidth":  null,
+        "anchor":  null,
+        "videoFocusX":  null,
+        "invert":  false
+    },
+    {
+        "id":  "italian-student-movement-of-1968",
+        "title":  "The Italian Student Movement of 1968",
+        "location":  "Venice, Rome, Milan, Italy",
+        "author":  "Author unknown",
+        "year":  "1967–1968",
+        "size":  "",
+        "credits":  null,
+        "text":  "The Italian student movement of 1968 emerged during a period of profound social, economic and cultural change. Young people challenged institutional authoritarianism, social inequalities and a university system they considered elitist and undemocratic. Influenced by international protests, opposition to the Vietnam War and the ideas of the New Left, including the French New Left, the movement spread rapidly throughout Italian universities and schools. Through occupations, assemblies and demonstrations, students demanded greater freedom, participation and equality. During 1968, the protests became more radical and increasingly connected with workers’ struggles, contributing to a broader wave of social mobilization that would profoundly shape Italy in the following years.\n\n1966–1967: The Origins of the Movement\n\n- 1966: The first signs of protest.\nProtests against the elitist nature of universities, the authoritarianism of professors and the presence of neo-fascist groups on university campuses began to grow. The death of student Paolo Rossi at the University of Rome in May 1966 sparked demonstrations and protests.\n- February 1967: The occupation of Palazzo Campana in Turin.\nStudents occupied the university building, challenging the organization of academic studies and demanding a more democratic and accessible university system.\n- 1967: Protests at IUAV in Venice.\nStudents at the Istituto Universitario di Architettura di Venezia (University Institute of Architecture of Venice) began a series of protests that culminated in a lengthy occupation known as the “Hundred Days Occupation.” They challenged traditional teaching methods and called for a rethinking of the relationship between architectural education, society and collective needs.\n- November–December 1967: Occupations spread.\nTrento, Pisa and other universities became important centers of protest. Student assemblies and political documents emerged, challenging the university system and academic hierarchies.\n\n1968: The Year of Protest\n\n- January–February: Occupations spread.\nProtests reached universities in Rome, Turin, Milan, Trento, Pisa, Bologna and Naples. Student assemblies became spaces for discussion and collective decision-making.\n- 1 March: The Battle of Valle Giulia in Rome.\nFollowing the police eviction of the Faculty of Architecture at Sapienza University, students confronted the police in violent clashes near the faculty, in the Valle Giulia area. The incident became one of the defining symbols of the Italian student movement.\n- 16 March: Clashes at Sapienza University in Rome.\nNeo-fascist militants attacked students gathered in the Faculty of Humanities. The clashes intensified political tensions within the university.\n- March: Protests at the Catholic University of Milan.\nStudents protested against the university’s organizational structure and demanded greater autonomy and participation. The occupation and subsequent eviction contributed to the expansion of the movement.\n- Spring: The protests spread throughout society.\nDemonstrations became connected with international struggles, particularly opposition to the Vietnam War. Students challenged not only the university system but also capitalism, social inequalities and hierarchical structures.\n- May: The occupation of the 14th Milan Triennale.\nOn 30 May, the opening day of the exhibition, protesters and artists occupied the Triennale, including Giancarlo De Carlo. The protest challenged the role of cultural institutions and the elitist nature of art and architecture, calling for a closer relationship between culture and society.\n- May–June: The influence of the French May 1968 protests.\nThe protests in France strengthened the international momentum of the student movement. Occupations and demonstrations continued in Italy, while dialogue with the working class grew.\n- Autumn: Closer ties with workers’ struggles.\nStudent protests became increasingly intertwined with workers’ demands. Discussions focused on wages, working conditions, factory hierarchies and the possibility of transforming society.\n- 31 December: The protest outside La Bussola nightclub.\nIn Marina di Pietrasanta, a demonstration against social inequality outside the La Bussola nightclub was suppressed by the police. Sixteen-year-old Soriano Ceccanti was seriously injured and left paralyzed.\n\n1969: From Students to Workers\n\n- January–spring: Protests continue in schools.\nSecondary school students increasingly joined the demonstrations, demanding the right to hold assemblies, greater democracy in education and a reduction in educational inequalities.",
+        "heroImage":  "projects/italian-student-movement-of-1968/Italian-student-movement-of-1968_hero.webp",
+        "heroVideo":  null,
+        "background":  null,
+        "gallery":  [
+                        {
+                            "src":  "projects/italian-student-movement-of-1968/Italian-student-movement-of-1968_1.webp",
+                            "caption":  "Entrance to the Triennale building during occupation, Milan, 1968."
+                        },
+                        {
+                            "src":  "projects/italian-student-movement-of-1968/Italian-student-movement-of-1968_2.webp",
+                            "caption":  "The roof of the IUAV University library during the \"100 day\" occupation, Venice, 1968."
+                        },
+                        {
+                            "src":  "projects/italian-student-movement-of-1968/Italian-student-movement-of-1968_3.webp",
+                            "caption":  "Battle of Valle Giulia, 1 March 1968, Rome."
+                        }
+                    ],
+        "position":  null,
+        "mapWidth":  null,
+        "anchor":  null,
+        "videoFocusX":  null,
+        "invert":  false
+    },
+    {
+        "id":  "the-velvet-revolution",
+        "title":  "The Velvet Revolution",
+        "location":  "Prague, Czechoslovakia",
+        "author":  null,
+        "year":  "1989",
+        "size":  null,
+        "credits":  null,
+        "text":  "Student activism has historically played an important role in political revolutions, social reform, and cultural change. Universities often provide spaces where young people can exchange ideas, question authority, and challenge existing power structures. This puts it leaves students in the unique position of possessing intellectual resources, high social mobility and relative freedom from full-time economic and familial responsibilities.   Throughout the 20th century, student movements became influential in struggles for freedom, democracy, and national self-determination. Despite facing political repression and state surveillance, students have continued to contribute to social and political change. Two historical examples of this are: the Velvet Revolution in Czechoslovakia and the Sputnik Affair at the College of Architecture and Civil Engineering in Weimar, East Germany. Both illustrate how student protests challenged authoritarian structures and helped bring demands for greater freedom and democratic participation into public debate.\n\nTHE VELVET REVOLUTION (17 – 28 November 1989)\nThe Velvet Revolution was a peaceful revolution that was set in motion after a student protest, which was broken up by the riot police. This and the following events led to the end of 41 years of one-party rule in Czechoslovakia and the subsequent dismantling of the command economy and the transition to a parliamentary republic.\n\nThe International Students’ Day: To understand the significance of the day we have to look into the past of International Students’ Day. On the 17th of November 1939 Nazi forces violently suppressed student demonstrations against the German occupation. This tragic event ended with nine dead student leaders who were executed and more than 1,200 Students sent to concentration camps. Since then, the International Students’ Day has been an annual global observance honoring student activism, academic freedom, and the historical struggle of students against oppression.\n\n50th anniversary of the International Students’ Day: 50 years later students and high school students organized an unauthorized demonstration in the center of Bratislava on the 16th November. This demonstration expressed resistance against the communist leadership, demanding academic freedom and a real democracy. Around 250 students took part and later were threatened with expulsion from the university and repercussions for their relatives. These threats had the opposite effect of quieting the students down. Peaceful student demonstrations in Prague on the next day (17th of November) were joined by 15,000 people. These demonstrations were, just like 50 years prior, forcefully suppressed by the riot police. At about 19:30, the demonstrators were stopped by a cordon of riot police. They blocked all escape routes and attacked the students.\nThe atmosphere of fear and hopelessness gave room for a hoax about a dead student named  Martin Šmíd. The story was fabricated up by Drahomíra Dražská while she was awaiting treatment after she was injured during the riot. This incident helped mobilize the people and contributed to the outbreak of the revolution. That same evening, students and theatre actors agreed to go on strike.\n18 November 1989: The strike was at the Realistic Theatre and other theatres quickly followed suit. The theaters opened their stages only for public discussions.\nThe strike was initially organized by students of the Academy of Performing Arts in Prague. Shortly after, the strike was joined by university students throughout Czechoslovakia. The strike was also widely supported by theatre employees and actors in Prague. Instead of performing on stage, the actors read a proclamation written by  students and artists to the audience, calling for a general strike on November 27th.\nSince all the media was strictly controlled by the Communist Party, their only means of communication and spreading the message were through homemade posters, proclamations and the spoken word.\nIn the evening, the media reported the death of Martin Šmíd. Although the report was false, it heightened the feeling of crisis, which helped to mobilize even the more hesitant  citizens.\n24 November 1989: The entire top leadership of the Communist Party, including General secretary Milos Jakes, resigned.\nOn November 27th, a two-hour nationwide general strike took place across Czechoslovakia, with approximately 75% of the population participating.\n\nOn November 28th, following growing public demonstrations and increasing pressure, the Communist Party announced that it would give up its monopoly on power and end the one-party state.\nOn the 30th of November, the federal parliament formally removed the provisions of the Constitution that guaranteed the Communist Party’s monopoly on political power, marking a major step towards democracy.\nDecember 1989: In early December, border barriers along the borders with West Germany and Austria, including barbed wire and other obstructions, were removed.\nDecember 10th: President Gustáv Husák appointed the first largely non-communist government since 1948.\nOn 28th of December, Alexander Dubček was elected speaker of the federal parliament and the following day on December 29th Václav Havel was elected President of Czechoslovakia.\n\nJune 1990: Czechoslovakia held its first democratic parliamentary elections since 1946, marking a major step towards democracy. On 31 December 1992, the country peacefully split into the Czech Republic and Slovakia, largely because of political disagreements between Czech and Slovak political representatives over the future governance of the country.\n\nConclusion: Students were a key catalyst for the Velvet Revolution. Through their courage, organization, and willingness to challenge the authorities, they helped transform students protest into a nationwide movement for democracy. Although they did not act alone, their actions helped mobilize the public, weaken the communist regime, and create momentum for peaceful political change.",
+        "heroImage":  "projects/the-velvet-revolution/the-velvet-revolution_hero.webp",
+        "heroVideo":  null,
+        "background":  null,
+        "gallery":  [
+                        {
+                            "src":  "projects/the-velvet-revolution/the-velvet-revolution_1.webp",
+                            "caption":  "The Velvet Revolution, Statue, Prague."
+                        },
+                        {
+                            "src":  "projects/the-velvet-revolution/the-velvet-revolution_2.webp",
+                            "caption":  "The Velvet Revolution, Flags, Prague."
+                        },
+                        {
+                            "src":  "projects/the-velvet-revolution/the-velvet-revolution_3.webp",
+                            "caption":  "The Velvet Revolution, Protest, Prague."
                         }
                     ],
         "position":  null,

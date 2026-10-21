@@ -1,0 +1,46 @@
+# DEMOCRACY & SPACE - PROJECT INFO
+# Fill in the text after each KEYWORD: and keep the keywords exactly as they are.
+# Lines starting with # are ignored - you can delete them.
+
+TITLE: The Velvet Revolution
+LOCATION: Prague, Czechoslovakia
+YEAR: 1989
+CREDITS:
+
+# --- site editor settings (optional) ---
+INVERT: no
+
+TEXT:
+Student activism has historically played an important role in political revolutions, social reform, and cultural change. Universities often provide spaces where young people can exchange ideas, question authority, and challenge existing power structures. This puts it leaves students in the unique position of possessing intellectual resources, high social mobility and relative freedom from full-time economic and familial responsibilities.   Throughout the 20th century, student movements became influential in struggles for freedom, democracy, and national self-determination. Despite facing political repression and state surveillance, students have continued to contribute to social and political change. Two historical examples of this are: the Velvet Revolution in Czechoslovakia and the Sputnik Affair at the College of Architecture and Civil Engineering in Weimar, East Germany. Both illustrate how student protests challenged authoritarian structures and helped bring demands for greater freedom and democratic participation into public debate.
+
+THE VELVET REVOLUTION (17 – 28 November 1989)
+The Velvet Revolution was a peaceful revolution that was set in motion after a student protest, which was broken up by the riot police. This and the following events led to the end of 41 years of one-party rule in Czechoslovakia and the subsequent dismantling of the command economy and the transition to a parliamentary republic.
+
+The International Students’ Day: To understand the significance of the day we have to look into the past of International Students’ Day. On the 17th of November 1939 Nazi forces violently suppressed student demonstrations against the German occupation. This tragic event ended with nine dead student leaders who were executed and more than 1,200 Students sent to concentration camps. Since then, the International Students’ Day has been an annual global observance honoring student activism, academic freedom, and the historical struggle of students against oppression. 
+
+50th anniversary of the International Students’ Day: 50 years later students and high school students organized an unauthorized demonstration in the center of Bratislava on the 16th November. This demonstration expressed resistance against the communist leadership, demanding academic freedom and a real democracy. Around 250 students took part and later were threatened with expulsion from the university and repercussions for their relatives. These threats had the opposite effect of quieting the students down. Peaceful student demonstrations in Prague on the next day (17th of November) were joined by 15,000 people. These demonstrations were, just like 50 years prior, forcefully suppressed by the riot police. At about 19:30, the demonstrators were stopped by a cordon of riot police. They blocked all escape routes and attacked the students. 
+The atmosphere of fear and hopelessness gave room for a hoax about a dead student named  Martin Šmíd. The story was fabricated up by Drahomíra Dražská while she was awaiting treatment after she was injured during the riot. This incident helped mobilize the people and contributed to the outbreak of the revolution. That same evening, students and theatre actors agreed to go on strike.
+18 November 1989: The strike was at the Realistic Theatre and other theatres quickly followed suit. The theaters opened their stages only for public discussions.
+The strike was initially organized by students of the Academy of Performing Arts in Prague. Shortly after, the strike was joined by university students throughout Czechoslovakia. The strike was also widely supported by theatre employees and actors in Prague. Instead of performing on stage, the actors read a proclamation written by  students and artists to the audience, calling for a general strike on November 27th.
+Since all the media was strictly controlled by the Communist Party, their only means of communication and spreading the message were through homemade posters, proclamations and the spoken word.
+In the evening, the media reported the death of Martin Šmíd. Although the report was false, it heightened the feeling of crisis, which helped to mobilize even the more hesitant  citizens. 
+24 November 1989: The entire top leadership of the Communist Party, including General secretary Milos Jakes, resigned. 
+On November 27th, a two-hour nationwide general strike took place across Czechoslovakia, with approximately 75% of the population participating.
+
+On November 28th, following growing public demonstrations and increasing pressure, the Communist Party announced that it would give up its monopoly on power and end the one-party state.
+On the 30th of November, the federal parliament formally removed the provisions of the Constitution that guaranteed the Communist Party’s monopoly on political power, marking a major step towards democracy.
+December 1989: In early December, border barriers along the borders with West Germany and Austria, including barbed wire and other obstructions, were removed.  
+December 10th: President Gustáv Husák appointed the first largely non-communist government since 1948.
+On 28th of December, Alexander Dubček was elected speaker of the federal parliament and the following day on December 29th Václav Havel was elected President of Czechoslovakia.
+
+June 1990: Czechoslovakia held its first democratic parliamentary elections since 1946, marking a major step towards democracy. On 31 December 1992, the country peacefully split into the Czech Republic and Slovakia, largely because of political disagreements between Czech and Slovak political representatives over the future governance of the country.
+
+Conclusion: Students were a key catalyst for the Velvet Revolution. Through their courage, organization, and willingness to challenge the authorities, they helped transform students protest into a nationwide movement for democracy. Although they did not act alone, their actions helped mobilize the public, weaken the communist regime, and create momentum for peaceful political change.
+
+
+CAPTIONS:
+# one caption per image: the number matches the end of the file name
+# 1 = project-title_1.webp, 2 = project-title_2.webp, ...
+1: The Velvet Revolution, Statue, Prague.
+2: The Velvet Revolution, Flags, Prague.
+3: The Velvet Revolution, Protest, Prague.
