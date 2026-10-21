@@ -5,7 +5,7 @@
 TITLE: The Sputnik Affair
 LOCATION: Weimar, Germany
 YEAR: 1988
-CONTRIBUTED BY:
+CONTRIBUTED BY: Eva Schütze & Beatrice Colalillo
 CREDITS: Jürgen Würtele; Archiv der Moderne, Bauhaus-Universität Weimar
 
 # --- site editor settings (optional) ---

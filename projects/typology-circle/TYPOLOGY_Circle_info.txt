@@ -1,0 +1,24 @@
+# DEMOCRACY & SPACE - PROJECT INFO
+# Fill in the text after each KEYWORD: and keep the keywords exactly as they are.
+# Lines starting with # are ignored - you can delete them.
+
+TITLE: Circle Typology
+
+CREDITS: Angela Weiss
+
+# --- site editor settings (optional) ---
+INVERT: no
+TEXT:
+The circular typology has evolved from religious and symbolic gatherings to modern political assemblies. In the past, the circle represented unity and equality before a shared sacred presence, as illustrated by communal meals and the legend of King Arthur’s Round Table. In Ancient Greece, citizens gathered in public assemblies to debate and make political decisions, establishing a link between collective gathering and democracy.
+
+From the 18th century onwards, circular and semicircular arrangements became associated with political representation and parliamentary debate. Today, this typology can be found in international institutions, citizens’ assemblies, public consultations and community meetings, where it encourages dialogue and collective decision-making.
+
+The power of the circle lies in its spatial organisation: everyone can see one another, there is no inherently privileged end, and the shared centre brings participants together. Unlike a frontal arrangement, which establishes a clear hierarchy between speaker and audience, the circle encourages face-to-face interaction and gives the group a sense of collective identity. However, spatial equality does not necessarily guarantee political equality: the way speaking time, access and decision-making power are distributed remains essential.
+
+CAPTIONS:
+# one caption per image: the number matches the end of the file name
+# 1 = project-title_1.webp, 2 = project-title_2.webp, ...
+1: The Supper, Jaime Serra, 1360.
+2: King Arthur and the Knights of the Round Table, Évrard d’Espinques, 1475.
+3: NATO Summit, Paris, 1957.
+4: The United Nations Security Council meeting, New York, 2025.

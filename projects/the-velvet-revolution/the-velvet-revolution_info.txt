@@ -5,7 +5,7 @@
 TITLE: The Velvet Revolution
 LOCATION: Prague, Czechoslovakia
 YEAR: 1989
-CONTRIBUTED BY:
+CONTRIBUTED BY: Eva Schütze & Beatrice Colalillo
 CREDITS:
 
 # --- site editor settings (optional) ---

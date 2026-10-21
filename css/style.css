@@ -197,7 +197,8 @@ input {
   filter: invert(1);
 }
 
-/* photos keep their real colors (INVERT: no in the project's _info.txt) */
+/* photos and transparent drawings keep their real colors
+   (INVERT: no in the project's _info.txt) */
 .card--no-invert img {
   filter: none;
 }
@@ -545,10 +546,11 @@ input {
   transform: translate(-50%, -50%);
 }
 
+/* top left: the scroll circle runs down the right edge */
 .panel__close {
   position: absolute;
   top: 0.4em;
-  right: 0.6em;
+  left: 0.6em;
   z-index: 1;
   font-size: 2em;
   line-height: 1;
@@ -562,7 +564,7 @@ input {
 .panel__content {
   height: 100%;
   overflow-y: auto;
-  padding: 2em clamp(1.2em, 4vw, 3em) 3em;
+  padding: 3.2em clamp(1.2em, 4vw, 3em) 3em;   /* top: room for the close × */
   overscroll-behavior: contain;
   user-select: text;
   -webkit-user-select: text;
@@ -637,6 +639,5 @@ input {
 
   .project__title {
     font-size: 1.9em;
-    padding-right: 1em;         /* keep clear of the close button */
   }
 }
