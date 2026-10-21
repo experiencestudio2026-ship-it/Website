@@ -6,6 +6,7 @@ TITLE: Roundtable
 LOCATION: London, UK
 AUTHOR: Urban Radicals
 YEAR: 2024
+CONTRIBUTED BY:
 SIZE: 14 m²
 CREDITS: Luke O’Donovan, Lorenzo Zandri
 

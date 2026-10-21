@@ -6,6 +6,7 @@ TITLE: Speaker's Plinths
 LOCATION: London, UK
 AUTHOR: Urban Radicals
 YEAR: 2024
+CONTRIBUTED BY:
 SIZE: 17 m²
 CREDITS: Lorenzo Zandri, Nasios Varnavas, Luke O’Donovan
 

@@ -6,6 +6,7 @@ TITLE: Voicing Pod
 LOCATION: London, UK
 AUTHOR: Urban Radicals
 YEAR: 2024
+CONTRIBUTED BY:
 SIZE: 4 m²
 CREDITS: Lorenzo Zandri, Nasios Varnavas, Luke O’Donovan
 

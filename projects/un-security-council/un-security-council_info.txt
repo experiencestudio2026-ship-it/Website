@@ -2,6 +2,7 @@ TITLE: United Nations Security Council Chamber
 LOCATION: New York, United States
 AUTHOR:
 YEAR:
+CONTRIBUTED BY:
 
 # --- site editor settings (optional) ---
 POSITION: -13, 0

@@ -61,7 +61,10 @@ what the file is for - so please keep it exactly.
 
 
 6. TEXTS (_info.txt)
-   - keep the KEYWORDS: (TITLE:, LOCATION:, AUTHOR:, YEAR:, SIZE:, CREDITS:, TEXT:, CAPTIONS:)
+   - keep the KEYWORDS: (TITLE:, LOCATION:, AUTHOR:, YEAR:, CONTRIBUTED BY:, SIZE:,
+     CREDITS:, TEXT:, CAPTIONS:)
+   - AUTHOR: who designed / made the project shown (architect, collective, ...)
+   - CONTRIBUTED BY: your name - the student who researched and wrote this entry
    - SIZE: floor area of the project, e.g. 35 m²
    - CREDITS: the photographers' names, shown as "Photography by: ..."
      (leave empty if there are none)

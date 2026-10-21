@@ -2,6 +2,7 @@ TITLE: Bundestag
 LOCATION: Berlin, Germany
 AUTHOR:
 YEAR:
+CONTRIBUTED BY:
 
 # --- site editor settings (optional) ---
 POSITION: 0, 0

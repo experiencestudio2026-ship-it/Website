@@ -72,6 +72,7 @@
     author: d.author || "",
     year: d.year || "",
     size: d.size || "",
+    contributor: d.contributor || "",   // the student who wrote the entry (AUTHOR = who made the project)
     credits: d.credits || "",
     text: d.text || "",
     gallery: d.gallery || [],
@@ -504,6 +505,7 @@
     const text = el("div", "project__text");
     p.text.split(/\n\s*\n/).map((s) => s.trim()).filter(Boolean)
       .forEach((par) => text.append(el("p", null, par)));
+    if (p.contributor) text.append(el("p", "project__credits", `Contributed by: ${p.contributor}`));
     if (p.credits) text.append(el("p", "project__credits", `Photography by: ${p.credits}`));
 
     const media = el("div", "project__media");
@@ -611,7 +613,7 @@
       return;
     }
     const matches = projects.filter((p) => q === "*" ||
-      [p.title, p.location, p.author, p.year, p.text].join(" ").toLowerCase().includes(q));
+      [p.title, p.location, p.author, p.contributor, p.year, p.text].join(" ").toLowerCase().includes(q));
     projects.forEach((p) => p.card.classList.toggle("is-hidden", !matches.includes(p)));
     if (!matches.length) searchResults.append(el("li", "result__meta", "nothing found"));
     matches.forEach((p) => searchResults.append(resultItem(p)));

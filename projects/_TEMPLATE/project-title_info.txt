@@ -6,6 +6,7 @@ TITLE: Example Project
 LOCATION: Berlin, Germany
 AUTHOR: Max Mustermann
 YEAR: 2026
+CONTRIBUTED BY: Erika Musterfrau
 SIZE: 120 m²
 CREDITS: Erika Musterfrau, Max Mustermann
 

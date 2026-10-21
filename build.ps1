@@ -7,7 +7,8 @@
 
   Folder rules (details: projects/README.txt) - the ending of a file name sets its role:
     projects/<folder>/              one folder = one project; folder name = project id in the URL
-      <name>_info.txt               texts (TITLE:, LOCATION:, AUTHOR:, YEAR:, SIZE:, CREDITS:, TEXT:, CAPTIONS:)
+      <name>_info.txt               texts (TITLE:, LOCATION:, AUTHOR:, YEAR:, SIZE:, CONTRIBUTED BY:, CREDITS:, TEXT:, CAPTIONS:)
+                                    AUTHOR = who made the project shown; CONTRIBUTED BY = the student who wrote the entry
       <name>_hero.png / .mp4        represents the project on the landing page (drawing or video)
       <name>_1.jpg, <name>_2.jpg    images on the project page, in number order
       <name>_background.mp4         optional background video of the project page
@@ -30,7 +31,7 @@ $outFile     = Join-Path $root 'js\projects-data.js'
 
 $imageExt = @('.png', '.jpg', '.jpeg', '.webp', '.gif', '.svg', '.avif')
 $videoExt = @('.mp4', '.webm')
-$keys     = @('TITLE', 'LOCATION', 'AUTHOR', 'YEAR', 'SIZE', 'CREDITS', 'CREDIT', 'TEXT', 'CAPTIONS',
+$keys     = @('TITLE', 'LOCATION', 'AUTHOR', 'YEAR', 'SIZE', 'CONTRIBUTED BY', 'CREDITS', 'CREDIT', 'TEXT', 'CAPTIONS',
               'POSITION', 'MAP WIDTH', 'ANCHOR', 'VIDEO FOCUS', 'INVERT')
 $invariant = [System.Globalization.CultureInfo]::InvariantCulture
 
@@ -182,6 +183,7 @@ foreach ($dir in $folders) {
     author      = $f['AUTHOR']
     year        = $f['YEAR']
     size        = $f['SIZE']
+    contributor = $f['CONTRIBUTED BY']
     credits     = $credits
     text        = $info.textJoined
     heroImage   = $(if ($heroImage) { Get-UrlPath $dir.Name $heroImage.Name } else { $null })

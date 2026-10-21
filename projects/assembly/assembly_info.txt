@@ -6,6 +6,7 @@ TITLE: Assembly
 LOCATION: London, UK
 AUTHOR: Urban Radicals
 YEAR: 2024
+CONTRIBUTED BY:
 SIZE: 35 m²
 CREDITS: Lorenzo Zandri, Luke O’Donovan
 

@@ -597,9 +597,14 @@ input {
 
 /* "Photography by: ..." under the project text */
 .project__text .project__credits {
-  margin-top: 1.6em;
+  margin: 0 0 0.2em;
   font-size: 0.85em;
   color: var(--color-muted);
+}
+
+/* the first of these lines keeps some distance from the text */
+.project__text p:not(.project__credits) + .project__credits {
+  margin-top: 1.6em;
 }
 
 .project__media {

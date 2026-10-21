@@ -2,6 +2,7 @@ TITLE: House of Commons Assembly
 LOCATION: London, United Kingdom
 AUTHOR:
 YEAR:
+CONTRIBUTED BY:
 
 # --- site editor settings (optional) ---
 POSITION: -8, -8

@@ -5,6 +5,7 @@
 TITLE: The Velvet Revolution
 LOCATION: Prague, Czechoslovakia
 YEAR: 1989
+CONTRIBUTED BY:
 CREDITS:
 
 # --- site editor settings (optional) ---
