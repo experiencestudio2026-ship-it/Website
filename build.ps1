@@ -56,7 +56,9 @@ function Read-Info($text) {
 
   foreach ($raw in ($text -split "`r?`n")) {
     $line = $raw.TrimEnd()
-    if ($line.TrimStart().StartsWith('#')) { continue }
+    # lines starting with # are comments - except inside TEXT:, where "# Heading"
+    # is a section heading on the project page
+    if ($line.TrimStart().StartsWith('#') -and $section -ne 'TEXT') { continue }
 
     if ($line -match '^\s*([A-Za-z][A-Za-z ]*?)\s*:\s*(.*)$' -and $keys -contains $Matches[1].ToUpper()) {
       $key = $Matches[1].ToUpper()

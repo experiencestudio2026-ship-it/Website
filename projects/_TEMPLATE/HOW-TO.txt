@@ -65,6 +65,8 @@ what the file is for - so please keep it exactly.
      CREDITS:, TEXT:, CAPTIONS:)
    - AUTHOR: who designed / made the project shown (architect, collective, ...)
    - CONTRIBUTED BY: your name - the student who researched and wrote this entry
+   - inside TEXT: a line "# Heading" starts a new section, **word** is bold,
+     *word* is italic. Leave an empty line between paragraphs.
    - SIZE: floor area of the project, e.g. 35 m²
    - CREDITS: the photographers' names, shown as "Photography by: ..."
      (leave empty if there are none)

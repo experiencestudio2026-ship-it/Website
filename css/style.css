@@ -627,6 +627,24 @@ input {
   align-items: start;
 }
 
+/* "# Heading" inside TEXT: in a project's _info.txt */
+.project__heading {
+  margin: 1.8em 0 0.6em;
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.4em;
+  line-height: 1.15;
+}
+
+.project__heading:first-child {
+  margin-top: 0;
+}
+
+.project__text strong {
+  font-weight: 700;
+}
+
 .project__text p {
   margin: 0 0 1em;
   max-width: 38em;

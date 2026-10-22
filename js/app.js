@@ -595,6 +595,16 @@
   const updateSearchDot = scrollDot(searchResults);
 
   // ---- Project panel (URL #<id>) ----------------------------------------------
+  // **bold** and *italic* in project texts, built as elements (never as HTML)
+  function formatted(node, str) {
+    str.split(/(\*\*[^*]+\*\*|\*[^*\s][^*]*\*)/).forEach((part) => {
+      if (/^\*\*[^*]+\*\*$/.test(part)) node.append(el("strong", null, part.slice(2, -2)));
+      else if (/^\*[^*]+\*$/.test(part)) node.append(el("em", null, part.slice(1, -1)));
+      else if (part) node.append(part);
+    });
+    return node;
+  }
+
   function buildPanel(p) {
     panelContent.replaceChildren();
     const meta = metaLine(p);
@@ -605,8 +615,11 @@
 
     const body = el("div", "project__body");
     const text = el("div", "project__text");
-    p.text.split(/\n\s*\n/).map((s) => s.trim()).filter(Boolean)
-      .forEach((par) => text.append(el("p", null, par)));
+    p.text.split(/\n\s*\n/).map((s) => s.trim()).filter(Boolean).forEach((par) => {
+      const heading = par.match(/^#+\s+(.*)$/s);     // "# 1. Status Quo"
+      if (heading) text.append(el("h2", "project__heading", heading[1]));
+      else text.append(formatted(el("p"), par));
+    });
     if (p.contributor) text.append(el("p", "project__credits", `Contributed by: ${p.contributor}`));
     if (p.credits) text.append(el("p", "project__credits", `Photography by: ${p.credits}`));
 
