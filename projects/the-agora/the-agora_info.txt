@@ -1,0 +1,22 @@
+# DEMOCRACY & SPACE - PROJECT INFO
+# Fill in the text after each KEYWORD: and keep the keywords exactly as they are.
+# Lines starting with # are ignored - you can delete them.
+
+TITLE: The Agora
+LOCATION: Ancient Greece
+AUTHOR: Unknown
+YEAR: 6th century BCE
+CONTRIBUTED BY:
+CREDITS: Carlos Zeballos
+
+# --- site editor settings (optional) ---
+INVERT: no
+
+TEXT:
+An outdoor public space where commercial, political, and social activities intersect. A place for meeting, exchange, discussion, and the formation of civic opinion. With the emergence of democracy in Athens, the Agora became one of the earliest examples of a public space associated with democratic practice and collective debate. Every adult male Greek citizen had the right to express his views freely on the current affairs of the city-state, bringing together collective efforts to make decisions that served the common good.
+
+CAPTIONS:
+# one caption per image: the number matches the end of the file name
+1: Isometric view of the complex.
+2: Architectural model and floor plan.
+3: Drawing.

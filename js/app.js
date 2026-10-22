@@ -627,6 +627,16 @@
   [...projects].sort((a, b) => a.title.localeCompare(b.title))
     .forEach((p) => indexList.append(resultItem(p)));
 
+  // contributors in About, from CONTRIBUTED BY: in each _info.txt
+  // ("A & B" or "A, B" are separate people; sorted by surname)
+  const surname = (name) => name.split(/\s+/).pop();
+  const contributors = [...new Set(projects.flatMap((p) =>
+    p.contributor.split(/\s*(?:&|,|\band\b)\s*/).map((n) => n.trim()).filter(Boolean)))]
+    .sort((a, b) => surname(a).localeCompare(surname(b)) || a.localeCompare(b));
+  const contributorsList = document.getElementById("contributors-list");
+  contributors.forEach((name) => contributorsList.append(el("li", null, name)));
+  contributorsList.previousElementSibling.hidden = contributorsList.hidden = !contributors.length;
+
   // image credits in the Impressum, from CREDITS: in each _info.txt
   const creditsList = document.getElementById("credits-list");
   [...projects].filter((p) => p.credits).sort((a, b) => a.title.localeCompare(b.title))

@@ -507,6 +507,13 @@ input {
   overflow-wrap: anywhere;
 }
 
+.menu__subtitle {
+  margin: 1.4em 0 0.4em;
+  font-size: 1em;
+  font-weight: 400;
+  color: var(--color-muted);
+}
+
 .menu__list {
   margin: 0;
   padding: 0;

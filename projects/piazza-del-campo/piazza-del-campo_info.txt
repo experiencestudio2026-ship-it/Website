@@ -1,0 +1,23 @@
+# DEMOCRACY & SPACE - PROJECT INFO
+# Fill in the text after each KEYWORD: and keep the keywords exactly as they are.
+# Lines starting with # are ignored - you can delete them.
+
+TITLE: Piazza del Campo
+LOCATION: Siena, Italy
+AUTHOR: Municipality of Siena, under the Government of the Nine
+YEAR: 13th–14th century (paving completed in 1349)
+CONTRIBUTED BY:
+SIZE: approx. 11,510 m²
+CREDITS: Taidg O Paintings
+
+TEXT:
+Piazza del Campo is a medieval public square characterized by its distinctive shell-shaped morphology and sloping topography. Its brick pavement is divided into nine sections, symbolizing the Government of the Nine. Surrounded by continuous medieval façades, the square converges towards the Palazzo Pubblico, creating a natural amphitheatre for civic gatherings, public debate and collective events.
+
+On 1 October 2025, more than 300 people gathered in Piazza del Campo following the interception of the Global Sumud Flotilla heading towards Gaza. The spontaneous demonstration subsequently moved through the historic city centre, illustrating how this medieval civic space continues to function as a place for contemporary political expression.
+
+CAPTIONS:
+# one caption per image: the number matches the end of the file name
+1: Isometric.
+2: Floor plan.
+3: Demonstration.
+4:

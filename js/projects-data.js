@@ -2,94 +2,6 @@
 // Edit the folders in projects/ and run build.bat instead.
 window.PROJECTS_DATA = [
     {
-        "id":  "bundestag",
-        "title":  "Bundestag",
-        "location":  "Berlin, Germany",
-        "author":  "",
-        "year":  "",
-        "size":  null,
-        "contributor":  "",
-        "credits":  null,
-        "text":  "Placeholder text for the German Bundestag.",
-        "heroImage":  null,
-        "heroVideo":  "projects/bundestag/Bundestag_hero.mp4",
-        "background":  "projects/bundestag/Bundestag_hero.mp4",
-        "gallery":  [
-                        {
-                            "src":  "projects/bundestag/bundestag_1.png",
-                            "caption":  ""
-                        }
-                    ],
-        "position":  [
-                         0,
-                         0
-                     ],
-        "mapWidth":  240,
-        "anchor":  null,
-        "videoFocusX":  null,
-        "invert":  true
-    },
-    {
-        "id":  "house-of-commons",
-        "title":  "House of Commons Assembly",
-        "location":  "London, United Kingdom",
-        "author":  "",
-        "year":  "",
-        "size":  null,
-        "contributor":  "",
-        "credits":  null,
-        "text":  "Placeholder text for the House of Commons.",
-        "heroImage":  null,
-        "heroVideo":  "projects/house-of-commons/house-of-commons_Hero.mp4",
-        "background":  "projects/house-of-commons/house-of-commons_Hero.mp4",
-        "gallery":  [
-                        {
-                            "src":  "projects/house-of-commons/house-of-commons_1.webp",
-                            "caption":  ""
-                        }
-                    ],
-        "position":  [
-                         -8,
-                         -8
-                     ],
-        "mapWidth":  240,
-        "anchor":  null,
-        "videoFocusX":  null,
-        "invert":  true
-    },
-    {
-        "id":  "un-security-council",
-        "title":  "United Nations Security Council Chamber",
-        "location":  "New York, United States",
-        "author":  "",
-        "year":  "",
-        "size":  null,
-        "contributor":  "",
-        "credits":  null,
-        "text":  "Placeholder text for the United Nations Security Council Chamber.",
-        "heroImage":  null,
-        "heroVideo":  "projects/un-security-council/un-security-council_hero.mp4",
-        "background":  "projects/un-security-council/un-security-council_hero.mp4",
-        "gallery":  [
-                        {
-                            "src":  "projects/un-security-council/un-security-council_1.webp",
-                            "caption":  ""
-                        },
-                        {
-                            "src":  "projects/un-security-council/un-security-council_2.webp",
-                            "caption":  ""
-                        }
-                    ],
-        "position":  [
-                         -13,
-                         0
-                     ],
-        "mapWidth":  240,
-        "anchor":  null,
-        "videoFocusX":  0.2,
-        "invert":  true
-    },
-    {
         "id":  "assembly",
         "title":  "Assembly",
         "location":  "London, UK",
@@ -393,5 +305,252 @@ window.PROJECTS_DATA = [
         "anchor":  null,
         "videoFocusX":  null,
         "invert":  false
+    },
+    {
+        "id":  "the-agora",
+        "title":  "The Agora",
+        "location":  "Ancient Greece",
+        "author":  "Unknown",
+        "year":  "6th century BCE",
+        "size":  null,
+        "contributor":  "",
+        "credits":  "Carlos Zeballos",
+        "text":  "An outdoor public space where commercial, political, and social activities intersect. A place for meeting, exchange, discussion, and the formation of civic opinion. With the emergence of democracy in Athens, the Agora became one of the earliest examples of a public space associated with democratic practice and collective debate. Every adult male Greek citizen had the right to express his views freely on the current affairs of the city-state, bringing together collective efforts to make decisions that served the common good.",
+        "heroImage":  "projects/the-agora/the-agora_hero.webp",
+        "heroVideo":  null,
+        "background":  null,
+        "gallery":  [
+                        {
+                            "src":  "projects/the-agora/the-agora_1.webp",
+                            "caption":  "Isometric view of the complex."
+                        },
+                        {
+                            "src":  "projects/the-agora/the-agora_2.webp",
+                            "caption":  "Architectural model and floor plan."
+                        },
+                        {
+                            "src":  "projects/the-agora/the-agora_3.webp",
+                            "caption":  "Drawing."
+                        }
+                    ],
+        "position":  null,
+        "mapWidth":  null,
+        "anchor":  null,
+        "videoFocusX":  null,
+        "invert":  false
+    },
+    {
+        "id":  "the-pnyx-hill",
+        "title":  "The Pnyx Hill",
+        "location":  "Athens, Ancient Greece",
+        "author":  "Unknown",
+        "year":  "End of 6th century BCE",
+        "size":  null,
+        "contributor":  "",
+        "credits":  "Larry Tweed",
+        "text":  "One of the earliest open-air spaces specifically adapted to accommodate democratic debates. Located on a hill in Athens, it served as a meeting place of the Ecclesia, the citizens\u0027 assembly, from around the late 6th or early 5th century BCE. Eligible male Athenian citizens gathered there to debate and vote, usually by a show of hands, on legislation, public finances, war, peace, and other political matters. The assembly also elected certain magistrates, while members of the Boule (the council) and the Heliaia (people\u0027s courts) were generally selected by lot.",
+        "heroImage":  "projects/the-pnyx-hill/the-pnyx-hill_hero.webp",
+        "heroVideo":  null,
+        "background":  null,
+        "gallery":  [
+                        {
+                            "src":  "projects/the-pnyx-hill/the-pnyx-hill_1.webp",
+                            "caption":  "Isometric view of the complex."
+                        },
+                        {
+                            "src":  "projects/the-pnyx-hill/the-pnyx-hill_2.webp",
+                            "caption":  "Speakers\u0027 platform."
+                        }
+                    ],
+        "position":  null,
+        "mapWidth":  null,
+        "anchor":  null,
+        "videoFocusX":  null,
+        "invert":  false
+    },
+    {
+        "id":  "pani_plaza-de-las-3-culturas",
+        "title":  "Plaza de las Tres Culturas",
+        "location":  "Tlatelolco, Mexico City, Mexico",
+        "author":  "Mario Pani",
+        "year":  "1964",
+        "size":  "5,000 m²",
+        "contributor":  "",
+        "credits":  "Christian Mendoza; Francisco Gallangos",
+        "text":  "The Plaza de las Tres Culturas, designed by architect and urbanist Mario Pani as part of the Nonoalco-Tlatelolco housing complex, brings together three periods of Mexican history: pre-Hispanic ruins, Spanish colonial architecture and modern Mexico. The open square connects these different layers of history, creating a space with strong cultural and political significance.\n\nOn 2 October 1968, the square became the scene of the Tlatelolco Massacre, when the Mexican army and security forces violently repressed a student demonstration demanding democratic reforms. Hundreds of people were killed or injured, although the exact number remains unknown. Today, the plaza is an important site of historical memory and political protest.",
+        "heroImage":  null,
+        "heroVideo":  "projects/pani_plaza-de-las-3-culturas/plaza-de-las-3-culturas_hero.mp4",
+        "background":  "projects/pani_plaza-de-las-3-culturas/plaza-de-las-3-culturas_hero.mp4",
+        "gallery":  [
+                        {
+                            "src":  "projects/pani_plaza-de-las-3-culturas/plaza-de-las-3-culturas_1.png",
+                            "caption":  "Isometric."
+                        },
+                        {
+                            "src":  "projects/pani_plaza-de-las-3-culturas/plaza-de-las-3-culturas_2.webp",
+                            "caption":  "Demonstration, 1968."
+                        },
+                        {
+                            "src":  "projects/pani_plaza-de-las-3-culturas/plaza-de-las-3-culturas_3.webp",
+                            "caption":  "Exterior view."
+                        },
+                        {
+                            "src":  "projects/pani_plaza-de-las-3-culturas/plaza-de-las-3-culturas_4.webp",
+                            "caption":  ""
+                        }
+                    ],
+        "position":  null,
+        "mapWidth":  null,
+        "anchor":  null,
+        "videoFocusX":  null,
+        "invert":  true
+    },
+    {
+        "id":  "place-de-la-republique",
+        "title":  "Place de la République",
+        "location":  "Paris, France",
+        "author":  "Charles Morice (architect) and Léopold Morice (sculptor)",
+        "year":  "1883 (inauguration of the monument)",
+        "size":  "34,000 m²",
+        "contributor":  "",
+        "credits":  "Daniel Portilla; TVK",
+        "text":  "Place de la République is a large urban square designed as an important traffic junction in Paris. Its central monument represents Marianne, the personification of the French Republic, surrounded by allegories of Liberty, Equality and Fraternity. Although initially conceived within a system of urban control and circulation, the square has evolved into a major public space for political expression and collective gatherings.\n\nOn Saturday 17 October 2026, Place de la République became a major gathering point for demonstrations against the rising cost of living and fuel prices. The mobilization brought together students and other social movements. The event illustrates how the square continues to function as a central space for political expression, collective protest and public debate in Paris.",
+        "heroImage":  null,
+        "heroVideo":  "projects/place-de-la-republique/place-de-la-republique_hero.mp4",
+        "background":  "projects/place-de-la-republique/place-de-la-republique_hero.mp4",
+        "gallery":  [
+                        {
+                            "src":  "projects/place-de-la-republique/place-de-la-republique_1.webp",
+                            "caption":  "Isometric."
+                        },
+                        {
+                            "src":  "projects/place-de-la-republique/place-de-la-republique_2.webp",
+                            "caption":  "Floor plan."
+                        },
+                        {
+                            "src":  "projects/place-de-la-republique/place-de-la-republique_3.webp",
+                            "caption":  "Demonstration, Saturday 17 October 2026."
+                        },
+                        {
+                            "src":  "projects/place-de-la-republique/place-de-la-republique_4.webp",
+                            "caption":  ""
+                        }
+                    ],
+        "position":  null,
+        "mapWidth":  null,
+        "anchor":  null,
+        "videoFocusX":  null,
+        "invert":  true
+    },
+    {
+        "id":  "puerta-del-sol",
+        "title":  "Puerta del Sol",
+        "location":  "Madrid, Spain",
+        "author":  "Lucio del Valle, Juan Rivera and José Morer (19th-century transformation)",
+        "year":  "1857–1862, latest renovation 2023",
+        "size":  "approx. 12,900 m²",
+        "contributor":  "",
+        "credits":  "El Confidencial; Linazasoro \u0026 Sánchez",
+        "text":  "Puerta del Sol is one of Madrid\u0027s most emblematic public spaces. Its semicircular morphology connects several major streets, creating a central point of circulation and social interaction. The square represents Spain\u0027s geographical and symbolic centre, marked by Kilometre Zero. Its latest renovation prioritizes pedestrian movement and creates a large, uninterrupted public space.\n\nOn 15 May 2011, Puerta del Sol became the epicentre of the Indignados Movement (15M), protesting against political corruption, economic inequality and the lack of democratic representation. Thousands of citizens occupied the square for several weeks, transforming it into a temporary self-organized city with assemblies, libraries and communal facilities. The occupation demonstrated how public space can become an instrument of direct democracy and collective political expression.",
+        "heroImage":  null,
+        "heroVideo":  "projects/puerta-del-sol/puerta-del-sol_hero.mp4",
+        "background":  "projects/puerta-del-sol/puerta-del-sol_hero.mp4",
+        "gallery":  [
+                        {
+                            "src":  "projects/puerta-del-sol/puerta-del-sol_1.webp",
+                            "caption":  "Isometric."
+                        },
+                        {
+                            "src":  "projects/puerta-del-sol/puerta-del-sol_2.webp",
+                            "caption":  "Floor plan."
+                        },
+                        {
+                            "src":  "projects/puerta-del-sol/puerta-del-sol_3.webp",
+                            "caption":  "Demonstration."
+                        },
+                        {
+                            "src":  "projects/puerta-del-sol/puerta-del-sol_4.webp",
+                            "caption":  ""
+                        }
+                    ],
+        "position":  null,
+        "mapWidth":  null,
+        "anchor":  null,
+        "videoFocusX":  null,
+        "invert":  true
+    },
+    {
+        "id":  "taksim-square",
+        "title":  "Taksim Square",
+        "location":  "Istanbul, Turkey",
+        "author":  "Henri Prost (urban planning)",
+        "year":  "1940 (modern square redevelopment)",
+        "size":  "36,000 m²",
+        "contributor":  "",
+        "credits":  "Turkiye News",
+        "text":  "Taksim Square is one of Istanbul\u0027s most important public spaces, developed as part of Henri Prost\u0027s modernization plan. Characterized by its open and irregular morphology, the square connects several major urban axes, including İstiklal Avenue, and serves as a central space for circulation, social interaction and political expression.\n\nIn May–June 2013, Taksim Square became the epicentre of the Gezi Park protests. Initially opposing the demolition and redevelopment of a nearby public park, the movement evolved into nationwide demonstrations demanding democratic rights and opposing government authoritarianism. The occupation of the square transformed it into a symbol of collective resistance and the right to public space.\n\nAnother significant event was the 1977 May Day Massacre, when 34 people died during a workers\u0027 demonstration.",
+        "heroImage":  null,
+        "heroVideo":  "projects/taksim-square/taksim-square_hero.mp4",
+        "background":  "projects/taksim-square/taksim-square_hero.mp4",
+        "gallery":  [
+                        {
+                            "src":  "projects/taksim-square/taksim-square_1.webp",
+                            "caption":  "Isometric."
+                        },
+                        {
+                            "src":  "projects/taksim-square/taksim-square_2.webp",
+                            "caption":  "Floor plan."
+                        },
+                        {
+                            "src":  "projects/taksim-square/taksim-square_3.webp",
+                            "caption":  "Demonstration."
+                        },
+                        {
+                            "src":  "projects/taksim-square/taksim-square_4.webp",
+                            "caption":  ""
+                        }
+                    ],
+        "position":  null,
+        "mapWidth":  null,
+        "anchor":  null,
+        "videoFocusX":  null,
+        "invert":  true
+    },
+    {
+        "id":  "piazza-del-campo",
+        "title":  "Piazza del Campo",
+        "location":  "Siena, Italy",
+        "author":  "Municipality of Siena, under the Government of the Nine",
+        "year":  "13th–14th century (paving completed in 1349)",
+        "size":  "approx. 11,510 m²",
+        "contributor":  "",
+        "credits":  "Taidg O Paintings",
+        "text":  "Piazza del Campo is a medieval public square characterized by its distinctive shell-shaped morphology and sloping topography. Its brick pavement is divided into nine sections, symbolizing the Government of the Nine. Surrounded by continuous medieval façades, the square converges towards the Palazzo Pubblico, creating a natural amphitheatre for civic gatherings, public debate and collective events.\n\nOn 1 October 2025, more than 300 people gathered in Piazza del Campo following the interception of the Global Sumud Flotilla heading towards Gaza. The spontaneous demonstration subsequently moved through the historic city centre, illustrating how this medieval civic space continues to function as a place for contemporary political expression.",
+        "heroImage":  null,
+        "heroVideo":  "projects/piazza-del-campo/piazza-del-campo_hero.mp4",
+        "background":  "projects/piazza-del-campo/piazza-del-campo_hero.mp4",
+        "gallery":  [
+                        {
+                            "src":  "projects/piazza-del-campo/piazza-del-campo_1.webp",
+                            "caption":  "Isometric."
+                        },
+                        {
+                            "src":  "projects/piazza-del-campo/piazza-del-campo_2.webp",
+                            "caption":  "Floor plan."
+                        },
+                        {
+                            "src":  "projects/piazza-del-campo/piazza-del-campo_3.webp",
+                            "caption":  "Demonstration."
+                        },
+                        {
+                            "src":  "projects/piazza-del-campo/piazza-del-campo_4.webp",
+                            "caption":  ""
+                        }
+                    ],
+        "position":  null,
+        "mapWidth":  null,
+        "anchor":  null,
+        "videoFocusX":  null,
+        "invert":  true
     }
 ];

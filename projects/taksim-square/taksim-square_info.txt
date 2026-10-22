@@ -1,0 +1,25 @@
+# DEMOCRACY & SPACE - PROJECT INFO
+# Fill in the text after each KEYWORD: and keep the keywords exactly as they are.
+# Lines starting with # are ignored - you can delete them.
+
+TITLE: Taksim Square
+LOCATION: Istanbul, Turkey
+AUTHOR: Henri Prost (urban planning)
+YEAR: 1940 (modern square redevelopment)
+CONTRIBUTED BY:
+SIZE: 36,000 m²
+CREDITS: Turkiye News
+
+TEXT:
+Taksim Square is one of Istanbul's most important public spaces, developed as part of Henri Prost's modernization plan. Characterized by its open and irregular morphology, the square connects several major urban axes, including İstiklal Avenue, and serves as a central space for circulation, social interaction and political expression.
+
+In May–June 2013, Taksim Square became the epicentre of the Gezi Park protests. Initially opposing the demolition and redevelopment of a nearby public park, the movement evolved into nationwide demonstrations demanding democratic rights and opposing government authoritarianism. The occupation of the square transformed it into a symbol of collective resistance and the right to public space.
+
+Another significant event was the 1977 May Day Massacre, when 34 people died during a workers' demonstration.
+
+CAPTIONS:
+# one caption per image: the number matches the end of the file name
+1: Isometric.
+2: Floor plan.
+3: Demonstration.
+4:

@@ -1,0 +1,23 @@
+# DEMOCRACY & SPACE - PROJECT INFO
+# Fill in the text after each KEYWORD: and keep the keywords exactly as they are.
+# Lines starting with # are ignored - you can delete them.
+
+TITLE: Puerta del Sol
+LOCATION: Madrid, Spain
+AUTHOR: Lucio del Valle, Juan Rivera and José Morer (19th-century transformation)
+YEAR: 1857–1862, latest renovation 2023
+CONTRIBUTED BY:
+SIZE: approx. 12,900 m²
+CREDITS: El Confidencial; Linazasoro & Sánchez
+
+TEXT:
+Puerta del Sol is one of Madrid's most emblematic public spaces. Its semicircular morphology connects several major streets, creating a central point of circulation and social interaction. The square represents Spain's geographical and symbolic centre, marked by Kilometre Zero. Its latest renovation prioritizes pedestrian movement and creates a large, uninterrupted public space.
+
+On 15 May 2011, Puerta del Sol became the epicentre of the Indignados Movement (15M), protesting against political corruption, economic inequality and the lack of democratic representation. Thousands of citizens occupied the square for several weeks, transforming it into a temporary self-organized city with assemblies, libraries and communal facilities. The occupation demonstrated how public space can become an instrument of direct democracy and collective political expression.
+
+CAPTIONS:
+# one caption per image: the number matches the end of the file name
+1: Isometric.
+2: Floor plan.
+3: Demonstration.
+4:

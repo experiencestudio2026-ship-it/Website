@@ -1,0 +1,21 @@
+# DEMOCRACY & SPACE - PROJECT INFO
+# Fill in the text after each KEYWORD: and keep the keywords exactly as they are.
+# Lines starting with # are ignored - you can delete them.
+
+TITLE: The Pnyx Hill
+LOCATION: Athens, Ancient Greece
+AUTHOR: Unknown
+YEAR: End of 6th century BCE
+CONTRIBUTED BY:
+CREDITS: Larry Tweed
+
+# --- site editor settings (optional) ---
+INVERT: no
+
+TEXT:
+One of the earliest open-air spaces specifically adapted to accommodate democratic debates. Located on a hill in Athens, it served as a meeting place of the Ecclesia, the citizens' assembly, from around the late 6th or early 5th century BCE. Eligible male Athenian citizens gathered there to debate and vote, usually by a show of hands, on legislation, public finances, war, peace, and other political matters. The assembly also elected certain magistrates, while members of the Boule (the council) and the Heliaia (people's courts) were generally selected by lot.
+
+CAPTIONS:
+# one caption per image: the number matches the end of the file name
+1: Isometric view of the complex.
+2: Speakers' platform.

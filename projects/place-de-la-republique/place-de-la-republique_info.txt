@@ -1,0 +1,23 @@
+# DEMOCRACY & SPACE - PROJECT INFO
+# Fill in the text after each KEYWORD: and keep the keywords exactly as they are.
+# Lines starting with # are ignored - you can delete them.
+
+TITLE: Place de la République
+LOCATION: Paris, France
+AUTHOR: Charles Morice (architect) and Léopold Morice (sculptor)
+YEAR: 1883 (inauguration of the monument)
+CONTRIBUTED BY:
+SIZE: 34,000 m²
+CREDITS: Daniel Portilla; TVK
+
+TEXT:
+Place de la République is a large urban square designed as an important traffic junction in Paris. Its central monument represents Marianne, the personification of the French Republic, surrounded by allegories of Liberty, Equality and Fraternity. Although initially conceived within a system of urban control and circulation, the square has evolved into a major public space for political expression and collective gatherings.
+
+On Saturday 17 October 2026, Place de la République became a major gathering point for demonstrations against the rising cost of living and fuel prices. The mobilization brought together students and other social movements. The event illustrates how the square continues to function as a central space for political expression, collective protest and public debate in Paris.
+
+CAPTIONS:
+# one caption per image: the number matches the end of the file name
+1: Isometric.
+2: Floor plan.
+3: Demonstration, Saturday 17 October 2026.
+4:

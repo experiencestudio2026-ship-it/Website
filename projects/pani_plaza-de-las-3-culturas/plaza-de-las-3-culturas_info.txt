@@ -1,0 +1,23 @@
+# DEMOCRACY & SPACE - PROJECT INFO
+# Fill in the text after each KEYWORD: and keep the keywords exactly as they are.
+# Lines starting with # are ignored - you can delete them.
+
+TITLE: Plaza de las Tres Culturas
+LOCATION: Tlatelolco, Mexico City, Mexico
+AUTHOR: Mario Pani
+YEAR: 1964
+CONTRIBUTED BY:
+SIZE: 5,000 m²
+CREDITS: Christian Mendoza; Francisco Gallangos
+
+TEXT:
+The Plaza de las Tres Culturas, designed by architect and urbanist Mario Pani as part of the Nonoalco-Tlatelolco housing complex, brings together three periods of Mexican history: pre-Hispanic ruins, Spanish colonial architecture and modern Mexico. The open square connects these different layers of history, creating a space with strong cultural and political significance.
+
+On 2 October 1968, the square became the scene of the Tlatelolco Massacre, when the Mexican army and security forces violently repressed a student demonstration demanding democratic reforms. Hundreds of people were killed or injured, although the exact number remains unknown. Today, the plaza is an important site of historical memory and political protest.
+
+CAPTIONS:
+# one caption per image: the number matches the end of the file name
+1: Isometric.
+2: Demonstration, 1968.
+3: Exterior view.
+4:
