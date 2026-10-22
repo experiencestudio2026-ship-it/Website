@@ -6,7 +6,7 @@ TITLE: Floating University
 LOCATION: Berlin, Germany
 AUTHOR: raumlaborberlin
 YEAR: 2018
-CONTRIBUTED BY:
+CONTRIBUTED BY: Ethel Halimi
 CREDITS: Victoria Tomaschko, Jeanne Astrup-Chauvaux
 
 # --- site editor settings (optional) ---

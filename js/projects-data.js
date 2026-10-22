@@ -593,7 +593,7 @@ window.PROJECTS_DATA = [
         "author":  "raumlaborberlin",
         "year":  "2018",
         "size":  null,
-        "contributor":  "",
+        "contributor":  "Ethel Halimi",
         "credits":  "Victoria Tomaschko, Jeanne Astrup-Chauvaux",
         "text":  "The raumlaborberlin collective, founded in Berlin in 1999, works at the intersection of architecture, urban planning and art. Viewing architecture as an experimental laboratory, the collective creates, in particular, temporary and participatory structures that encourage encounters, exchanges and, above all, the collective appropriation of public space.\n\nFrom April to September 2018, raumlaborberlin invited people to a visionary floating laboratory in the heart of the city, dedicated to collective and experimental learning, the transfer of knowledge and the formation of transdisciplinary networks, with the aim of challenging the routines and habits of urban practices: the Floating University of Berlin. Built on a rainwater retention basin and consisting of polluted urban surface water, it presents a paradoxical haven for parallel and shared activities – a place of surprises and constant encounters. The open nature of the structures encourages the flow of ideas and relationships between different university groups, initiatives, neighbours and other Berliners.\n\nIn other words, it is a place of learning, where one learns to get involved, to grasp the complexity of the world and find one’s way within it, and to imagine and create different forms of living space.",
         "heroImage":  "projects/floating-university/floating-university_hero.webp",
