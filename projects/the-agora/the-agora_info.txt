@@ -6,7 +6,7 @@ TITLE: The Agora
 LOCATION: Ancient Greece
 AUTHOR: Unknown
 YEAR: 6th century BCE
-CONTRIBUTED BY:
+CONTRIBUTED BY: Carola Marín Cuesta
 CREDITS: Carlos Zeballos
 
 # --- site editor settings (optional) ---

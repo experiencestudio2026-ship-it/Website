@@ -6,7 +6,7 @@ TITLE: The Pnyx Hill
 LOCATION: Athens, Ancient Greece
 AUTHOR: Unknown
 YEAR: End of 6th century BCE
-CONTRIBUTED BY:
+CONTRIBUTED BY: Carola Marín Cuesta
 CREDITS: Larry Tweed
 
 # --- site editor settings (optional) ---
