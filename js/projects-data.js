@@ -622,5 +622,42 @@ window.PROJECTS_DATA = [
         "anchor":  null,
         "videoFocusX":  null,
         "invert":  false
+    },
+    {
+        "id":  "typology-opposing",
+        "title":  "Opposing Typology",
+        "location":  null,
+        "author":  null,
+        "year":  null,
+        "size":  null,
+        "contributor":  "",
+        "credits":  "Jacques Boissinot",
+        "text":  "The opposing typology has evolved from ancient Roman political and institutional spaces to modern parliamentary assemblies. In this arrangement, two groups face one another across a central space, creating a spatial expression of confrontation, debate and the negotiation of opposing positions. In Ancient Rome, the Curia served as a meeting place for the Senate, where political decisions were discussed and competing interests confronted one another. This principle of deliberation between different positions later became particularly visible in British parliamentary tradition, where the government and the opposition sit on opposing benches, making political division physically legible within the chamber.\n\nToday, this typology remains visible in parliamentary chambers such as the House of Commons of the United Kingdom and the National Assembly of Quebec, where opposing benches physically separate the government from the opposition.\n\nThe power of this arrangement lies in its ability to make political conflict visible: each group faces its opponent directly, while the central space becomes a stage for argument, scrutiny and negotiation. Unlike circular arrangements, which emphasise unity and shared participation, the opposing typology acknowledges division as an essential component of democratic debate. However, this spatial organisation can also reinforce a binary understanding of politics, reducing complex positions to two opposing camps. The architecture therefore does more than accommodate debate; it actively shapes how political disagreement is expressed and perceived.",
+        "heroImage":  "projects/typology-opposing/typology-opposing_hero.png",
+        "heroVideo":  null,
+        "background":  null,
+        "gallery":  [
+                        {
+                            "src":  "projects/typology-opposing/typology-opposing_1.webp",
+                            "caption":  "Painting of an interior view of the Roman Curia, 80 BC, Peter Connolly."
+                        },
+                        {
+                            "src":  "projects/typology-opposing/typology-opposing_2.webp",
+                            "caption":  "Opening of the first Parliament of Northern Ireland, 2021."
+                        },
+                        {
+                            "src":  "projects/typology-opposing/typology-opposing_3.webp",
+                            "caption":  "Painting of the state opening of the Northern Ireland Parliament, 1921, William Conor."
+                        },
+                        {
+                            "src":  "projects/typology-opposing/typology-opposing_4.webp",
+                            "caption":  "National Assembly of Quebec, 2022."
+                        }
+                    ],
+        "position":  null,
+        "mapWidth":  null,
+        "anchor":  null,
+        "videoFocusX":  null,
+        "invert":  false
     }
 ];
