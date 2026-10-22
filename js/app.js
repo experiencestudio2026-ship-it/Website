@@ -175,10 +175,12 @@
       if (c.width !== w || c.height !== h) { c.width = w; c.height = h; }
       g.drawImage(video, 0, 0, w, h);
     };
+    // every animation frame, drawing only when the video moved on (not
+    // requestVideoFrameCallback: Safari may never call it for a hidden video)
+    let last = -1;
     const loop = () => {
-      paint();
-      if (video.requestVideoFrameCallback) video.requestVideoFrameCallback(loop);
-      else requestAnimationFrame(loop);
+      if (video.currentTime !== last) { last = video.currentTime; paint(); }
+      requestAnimationFrame(loop);
     };
     video.addEventListener("loadeddata", paint);
     loop();
@@ -274,24 +276,67 @@
   // Browsers only allow sound after the visitor interacted with the page,
   // so it starts with the first click / tap / key press (on touch screens
   // only the end of a touch counts as an interaction).
+  //
+  // Each card video is unmuted once, inside that first interaction, and its
+  // sound runs through a Web Audio gain that fades it in and out. Toggling
+  // `muted` later (outside a tap) does not work on iPhones: Safari ignores
+  // `volume` and pauses a video that gets unmuted without a tap.
+  // Fallback (no Web Audio, or opened as a local file, where Web Audio would
+  // stay silent): fade with `volume` / `muted` as before.
   const videos = projects.filter((p) => p.video);
   let soundAllowed = false;
+  let audioCtx = null;
+
+  // resume() / suspend() return a promise only in newer browsers (old Safari: nothing)
+  const ctxCall = (method) => {
+    try { Promise.resolve(audioCtx && audioCtx[method]()).catch(() => {}); } catch (_) {}
+  };
 
   const allowSound = () => {
-    if (soundAllowed) return;
+    if (soundAllowed || !videos.length) return;
     soundAllowed = true;
+    // iPhone (iOS 17+): play through the silent switch like normal video sound,
+    // instead of the Web Audio default, which the switch mutes
+    try { if (navigator.audioSession) navigator.audioSession.type = "playback"; } catch (_) {}
+    const AC = window.AudioContext || window.webkitAudioContext;
+    if (AC && location.protocol !== "file:") {
+      try { audioCtx = new AC(); } catch (_) { audioCtx = null; }
+    }
     videos.forEach((p) => {
-      p.video.volume = 0;
+      if (audioCtx) {
+        try {
+          const gain = audioCtx.createGain();
+          gain.gain.value = 0;
+          const source = audioCtx.createMediaElementSource(p.video);
+          source.connect(gain);                    // not chained: old Safari's connect() returns nothing
+          gain.connect(audioCtx.destination);
+          p.gain = gain;
+          p.video.muted = false;                   // silent until its gain fades in
+        } catch (_) { p.gain = null; }
+      }
+      if (!p.gain) p.video.volume = 0;
       p.video.play().catch(() => {});
     });
+    ctxCall("resume");
   };
-  ["pointerup", "touchend", "keydown"].forEach((type) =>
-    window.addEventListener(type, allowSound, { passive: true }));
+  // only events every browser counts as a real interaction (Safari does not count
+  // pointerup); capture, so a click that ends a drag still unlocks the sound
+  window.addEventListener("click", allowSound, { capture: true });
+  ["touchend", "keydown"].forEach((type) =>
+    window.addEventListener(type, allowSound, { passive: true, capture: true }));
+
+  // a hidden tab stops the animation loop, so silence everything right away
+  function silenceVideos() {
+    ctxCall("suspend");
+    videos.forEach((p) => { if (!p.gain) p.video.muted = true; });
+  }
 
   // keep every video running: the cards always, the project's own videos while it
   // is open. Phones in power-saving mode only start videos after a first tap, and
   // browsers pause them in background tabs - so try again on both occasions.
   function resumeVideos(withPanel = true) {
+    // iPhones interrupt the audio (calls, other apps); a tap brings it back
+    if (audioCtx && audioCtx.state !== "running") ctxCall("resume");
     const panelVideos = openId && withPanel ? [...panelContent.querySelectorAll("video")] : [];
     [...videos.map((p) => p.video), ...panelVideos].forEach((v) => {
       if (v.paused) v.play().catch(() => {});
@@ -301,7 +346,8 @@
   ["pointerup", "touchend"].forEach((type) =>
     window.addEventListener(type, () => resumeVideos(false), { passive: true }));
   document.addEventListener("visibilitychange", () => {
-    if (!document.hidden) resumeVideos();
+    if (document.hidden) { silenceVideos(); return; }
+    resumeVideos();
   });
 
   function updateSound(dt) {
@@ -310,11 +356,16 @@
     const audible = videos.filter((p) => !p.card.classList.contains("is-hidden"));
     const closest = openId ? null
       : audible.reduce((best, p) => (!best || p.depth > best.depth ? p : best), null);
+    const step = SOUND_FADE * dt;
 
     videos.forEach((p) => {
-      const v = p.video;
       const target = p === closest ? 1 : 0;
-      const step = SOUND_FADE * dt;
+      if (p.gain) {
+        const g = p.gain.gain;
+        g.value = target > g.value ? Math.min(target, g.value + step) : Math.max(target, g.value - step);
+        return;
+      }
+      const v = p.video;
       const before = v.volume;
       v.volume = target > before ? Math.min(target, before + step) : Math.max(target, before - step);
       // some browsers (iOS) ignore volume: then switch with mute alone
@@ -598,6 +649,18 @@
   }
   window.addEventListener("hashchange", route);
 
+  // close button, Escape, or a tap on the space next to the panel: close directly
+  // (not only through a hash change) and drop the #id from the address
+  function requestClose() {
+    if (!openId) return;
+    if (location.hash) history.pushState(null, "", location.pathname + location.search);
+    closePanel();
+  }
+  document.getElementById("panel-close").addEventListener("click", requestClose);
+  world.addEventListener("click", (e) => {
+    if (openId && !e.target.closest(".card")) requestClose();
+  });
+
   // ---- Menus (About, Index) ---------------------------------------------------
   const menuButtons = [...document.querySelectorAll("[data-menu]")];
   function closeMenus() {
@@ -655,7 +718,7 @@
       return;
     }
     if (e.key === "Escape") {
-      if (openId) location.hash = "";
+      requestClose();
       closeMenus();
       return;
     }

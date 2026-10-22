@@ -204,14 +204,17 @@ input {
 }
 
 /* low-res video: the real video stays underneath, a tiny canvas on top */
+/* not fully invisible: Safari may stop decoding a video at opacity 0
+   (the canvas on top covers it anyway) */
 .card video {
   position: absolute;
   inset: 0;
-  opacity: 0;
+  opacity: 0.01;
 }
 
 .card canvas {
   position: relative;
+  image-rendering: -webkit-optimize-contrast;   /* older Safari */
   image-rendering: crisp-edges;
   image-rendering: pixelated;
 }
@@ -366,6 +369,9 @@ input {
 }
 
 .search__input {
+  -webkit-appearance: none;   /* Safari: no rounded search box */
+  appearance: none;
+  border-radius: 0;
   width: 100%;
   text-align: center;
   padding: 0.2em 0;
@@ -380,6 +386,12 @@ input {
   .search__input {
     font-size: 16px;
   }
+}
+
+/* Safari / Chrome: no magnifier icon or extra padding inside the search field */
+.search__input::-webkit-search-decoration,
+.search__input::-webkit-search-results-decoration {
+  -webkit-appearance: none;
 }
 
 .search__input::placeholder {
@@ -556,12 +568,21 @@ input {
 /* top left: the scroll circle runs down the right edge */
 .panel__close {
   position: absolute;
-  top: 0.4em;
-  left: 0.6em;
-  z-index: 1;
+  top: 0;
+  left: 0;
+  z-index: 3;                 /* above the content and the scroll circle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;                /* comfortable tap target on phones */
+  height: 48px;
+  padding: 0;
+  border: 0;
+  background: none;
   font-size: 2em;
   line-height: 1;
-  text-decoration: none;
+  cursor: pointer;
+  touch-action: manipulation;
 }
 
 .panel__close:hover {
