@@ -24,6 +24,7 @@
   const FOG_FAR_OPACITY = 0.8;    // opacity of the farthest cards (1 = no fading)
   const FOG_RANGE = 650;          // depth over which cards fade
   const VIDEO_LOWRES_WIDTH = 80;  // pixels across for hero videos (lower = blockier)
+  const CARD_SOUND = false;       // sound of the card videos in the space (true = the front video is heard)
   const SOUND_FADE = 0.0025;      // volume change per ms when the front video changes (1 / 400ms)
   const DRAG_THRESHOLD = 6;       // px moved before a press counts as a drag
   const FIT_WIDTH = 1000;         // screens narrower than this see the space smaller
@@ -310,7 +311,7 @@
   };
 
   const allowSound = () => {
-    if (soundAllowed || !videos.length) return;
+    if (!CARD_SOUND || soundAllowed || !videos.length) return;   // off: card videos stay muted
     soundAllowed = true;
     // iPhone (iOS 17+): play through the silent switch like normal video sound,
     // instead of the Web Audio default, which the switch mutes

@@ -741,5 +741,42 @@ window.PROJECTS_DATA = [
         "anchor":  null,
         "videoFocusX":  null,
         "invert":  true
+    },
+    {
+        "id":  "park_polarisation-public",
+        "title":  "The Polarisation of Dematerialised Public Space",
+        "location":  "",
+        "author":  "",
+        "year":  "",
+        "size":  "",
+        "contributor":  "Jiwon Park",
+        "credits":  null,
+        "text":  "The dematerialisation of public space has not removed its boundaries. Social media appears to offer a shared space where everyone can participate and exchange opinions. Yet, within the same platform, users can inhabit separate communities, rarely encountering different points of view. As public debate increasingly takes place online, these divisions become less visible.\n\nThe study Affective Polarisation and Dynamics of Information Spread in Online Networks (Lerman et al., 2024) makes this separation visible. By translating relationships between social media users into a spatial distribution, it reveals clusters of closely connected communities and the distances between them. Although these users belong to the same network, they do not necessarily share the same information or participate in the same conversations.\n\nFrom within the platform, such boundaries are difficult to recognise. We scroll, react, and share, believing that we actively choose the information we consume. However, what appears on our screens is already organised by our connections, previous interactions, and recommendation algorithms. Communication can become less about exchanging different perspectives and more about repeatedly receiving familiar opinions.\n\nThe protests in Paris in October 2026 offer an example of how the same event can be represented in contrasting ways. A video published by Le Parisien shows students marching through the city with a Trojan horse built by École Boulle, expressing their political demands through a collective performance. Another video, published by Brut, focuses on fires and destruction during the unrest. Both show aspects of the protests, yet each presents a different image of the event. Encountered separately, they can produce very different perceptions of the same reality.\n\nPhysical demonstrations present a different spatial condition. By occupying streets and squares, protesters transform ordinary urban spaces into places of collective political expression. The 1968 Poor People\u0027s Campaign in Washington, D.C., shows how thousands of people gathered in a shared public space to make their demands visible. Their presence could be seen and heard beyond the participating groups, creating possibilities for direct encounters, immediate reactions, and confrontation.\n\nHowever, physical and digital public spaces are closely connected. A demonstration takes place in the street, but its images and messages circulate through social media, where the same event can be fragmented into different narratives. The contrast between the Trojan horse and the images of looting during the Paris protests illustrates this process. What was experienced as a complex event in a shared physical space becomes separated into different realities online.\n\nWhat happens to democratic debate when people share the same platform, but no longer share the same experience of reality? As public space becomes increasingly dematerialised and fragmented, the role of physical public space becomes particularly important. Architecture and urban space can provide places where different groups remain visible to one another, where disagreement can be expressed directly, and where encounters are not entirely determined by selective information. The challenge is not to eliminate differences, but to create spatial conditions in which they can coexist and confront one another.",
+        "heroImage":  "projects/park_polarisation-public/polarisation-public_hero.webp",
+        "heroVideo":  null,
+        "background":  null,
+        "gallery":  [
+                        {
+                            "src":  "projects/park_polarisation-public/polarisation-public_1.webp",
+                            "caption":  "Lerman et al., Affective Polarisation, 2024."
+                        },
+                        {
+                            "src":  "projects/park_polarisation-public/polarisation-public_2.mp4",
+                            "caption":  "Le Parisien, Instagram, 2026."
+                        },
+                        {
+                            "src":  "projects/park_polarisation-public/polarisation-public_3.mp4",
+                            "caption":  "Brut, Instagram, 2026."
+                        },
+                        {
+                            "src":  "projects/park_polarisation-public/polarisation-public_4.webp",
+                            "caption":  "Poor People\u0027s Campaign, The Washington Post, 1968."
+                        }
+                    ],
+        "position":  null,
+        "mapWidth":  null,
+        "anchor":  null,
+        "videoFocusX":  null,
+        "invert":  false
     }
 ];
