@@ -34,6 +34,13 @@
   --blur: 20px;
 }
 
+/* phones: a smaller blur radius is much cheaper to draw */
+@media (max-width: 720px) {
+  :root {
+    --blur: 10px;
+  }
+}
+
 *,
 *::before,
 *::after {
@@ -242,6 +249,7 @@ input {
   line-height: 1;
   white-space: nowrap;
   pointer-events: none;       /* drags and clicks go through */
+  z-index: 30000;             /* above every card (cards: 10000 ± depth) */
   /* white letters on top of everything invert what is under them:
      white background -> black text, any card (in front of or behind the
      title's depth) -> the card's content, inverted */

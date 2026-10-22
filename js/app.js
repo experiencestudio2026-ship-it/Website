@@ -142,6 +142,7 @@
   let fit = 1;                    // whole space scaled down to fit small screens
   let titleWidth = 0;             // natural width of the center title, in px
   let openId = null;
+  let menuOpen = false;           // About / Index / Impressum / Privacy is open
 
   // ---- 3D -> screen ---------------------------------------------------------
   function project(x, y, z) {
@@ -164,27 +165,24 @@
     p.card.style.height = `${r >= 1 ? CARD_SIZE / r : CARD_SIZE}px`;
   }
 
-  // hero videos are shown low-res: frames drawn into a tiny canvas, scaled up
+  // hero videos are shown low-res: frames drawn into a tiny canvas, scaled up.
+  // Returns the canvas and a draw() that the animation loop calls for visible
+  // cards; it only draws when the video moved on (not requestVideoFrameCallback:
+  // Safari may never call it for a hidden video)
   function lowResCanvas(video) {
     const c = document.createElement("canvas");
     const g = c.getContext("2d");
-    const paint = () => {
-      if (video.readyState < 2 || !video.videoWidth) return;
+    let last = -1;
+    const draw = () => {
+      if (video.readyState < 2 || !video.videoWidth || video.currentTime === last) return;
+      last = video.currentTime;
       const w = VIDEO_LOWRES_WIDTH;
       const h = Math.max(1, Math.round((w * video.videoHeight) / video.videoWidth));
       if (c.width !== w || c.height !== h) { c.width = w; c.height = h; }
       g.drawImage(video, 0, 0, w, h);
     };
-    // every animation frame, drawing only when the video moved on (not
-    // requestVideoFrameCallback: Safari may never call it for a hidden video)
-    let last = -1;
-    const loop = () => {
-      if (video.currentTime !== last) { last = video.currentTime; paint(); }
-      requestAnimationFrame(loop);
-    };
-    video.addEventListener("loadeddata", paint);
-    loop();
-    return c;
+    video.addEventListener("loadeddata", draw);
+    return { canvas: c, draw };
   }
 
   projects.forEach((p) => {
@@ -198,8 +196,10 @@
     if (p.heroVideo) {
       const video = autoplayVideo(p.heroVideo);
       video.addEventListener("loadedmetadata", () => sizeCard(p, video.videoWidth, video.videoHeight));
-      media.append(video, lowResCanvas(video));
+      const lowRes = lowResCanvas(video);
+      media.append(video, lowRes.canvas);
       p.video = video;
+      p.drawVideo = lowRes.draw;
     } else if (imageSrc) {
       const img = document.createElement("img");
       img.src = imageSrc;
@@ -256,19 +256,36 @@
     const c = project(0, 0, 0);
     let titleScale = c.s / view.zoom;
     if (titleWidth) titleScale = Math.min(titleScale, (width * 0.9) / titleWidth);
-    const titleTransform = `translate(${c.x}px, ${c.y}px) scale(${titleScale}) translate(-50%, -50%)`;
-    centerTitle.style.transform = titleTransform;
-    centerTitle.style.zIndex = "30000";
+    centerTitle.style.transform =
+      `translate(${c.x}px, ${c.y}px) scale(${titleScale}) translate(-50%, -50%)`;
 
     projects.forEach((p) => {
       const pr = project(p.pos.x, p.pos.y, p.pos.z);
       p.depth = pr.z;                              // used to find the closest video
       p.card.style.transform =
         `translate(${pr.x}px, ${pr.y}px) scale(${pr.s}) translate(-50%, -50%)`;
-      p.card.style.zIndex = String(Math.round(10000 + pr.z));
-      // fog: farther cards fade into the background
+      // stacking order and fog change slowly: only touch the page when they do
+      const z = String(Math.round(10000 + pr.z));
+      if (z !== p.lastZ) { p.card.style.zIndex = z; p.lastZ = z; }
       const near = clamp((pr.z + FOG_RANGE) / (2 * FOG_RANGE), 0, 1);
-      p.card.style.opacity = (FOG_FAR_OPACITY + (1 - FOG_FAR_OPACITY) * near).toFixed(3);
+      const fog = (FOG_FAR_OPACITY + (1 - FOG_FAR_OPACITY) * near).toFixed(2);
+      if (fog !== p.lastFog) { p.card.style.opacity = fog; p.lastFog = fog; }
+      // on screen (with a margin)? only those videos play and get drawn
+      const half = CARD_SIZE * pr.s;
+      p.onScreen = pr.x > -half && pr.x < width + half && pr.y > -half && pr.y < height + half;
+      if (p.drawVideo && p.onScreen) p.drawVideo();
+    });
+  }
+
+  // card videos play only while they can be seen: on screen, not filtered out
+  // by search, no project open, tab visible. Saves decoding up to all of them.
+  function syncVideos() {
+    projects.forEach((p) => {
+      if (!p.video) return;
+      const want = !openId && !document.hidden && p.onScreen !== false
+        && !p.card.classList.contains("is-hidden");
+      if (want && p.video.paused) p.video.play().catch(() => {});
+      else if (!want && !p.video.paused) p.video.pause();
     });
   }
 
@@ -331,29 +348,32 @@
     videos.forEach((p) => { if (!p.gain) p.video.muted = true; });
   }
 
-  // keep every video running: the cards always, the project's own videos while it
-  // is open. Phones in power-saving mode only start videos after a first tap, and
-  // browsers pause them in background tabs - so try again on both occasions.
+  // keep the videos running that should run: the visible cards (syncVideos), and
+  // the project's own videos while it is open. Phones in power-saving mode only
+  // start videos after a first tap, and browsers pause them in background tabs -
+  // so try again on both occasions.
   function resumeVideos(withPanel = true) {
     // iPhones interrupt the audio (calls, other apps); a tap brings it back
     if (audioCtx && audioCtx.state !== "running") ctxCall("resume");
-    const panelVideos = openId && withPanel ? [...panelContent.querySelectorAll("video")] : [];
-    [...videos.map((p) => p.video), ...panelVideos].forEach((v) => {
-      if (v.paused) v.play().catch(() => {});
-    });
+    syncVideos();
+    if (openId && withPanel) {
+      panelContent.querySelectorAll("video").forEach((v) => {
+        if (v.paused) v.play().catch(() => {});
+      });
+    }
   }
   // on a tap only the cards: a tap on a project video's pause button must stay paused
   ["pointerup", "touchend"].forEach((type) =>
     window.addEventListener(type, () => resumeVideos(false), { passive: true }));
   document.addEventListener("visibilitychange", () => {
-    if (document.hidden) { silenceVideos(); return; }
+    if (document.hidden) { silenceVideos(); syncVideos(); return; }
     resumeVideos();
   });
 
   function updateSound(dt) {
     if (!soundAllowed || !videos.length) return;
     // the front video, unless a project is open (then the space is quiet)
-    const audible = videos.filter((p) => !p.card.classList.contains("is-hidden"));
+    const audible = videos.filter((p) => p.onScreen !== false && !p.card.classList.contains("is-hidden"));
     const closest = openId ? null
       : audible.reduce((best, p) => (!best || p.depth > best.depth ? p : best), null);
     const step = SOUND_FADE * dt;
@@ -427,10 +447,19 @@
 
   // ---- Animation loop -------------------------------------------------------
   let lastTime = 0;
+  let lastSync = 0;
 
   function frame(time) {
     const dt = lastTime ? Math.min(time - lastTime, 50) : 16;
     lastTime = time;
+    requestAnimationFrame(frame);
+
+    // which card videos play: a few times a second is enough
+    if (time - lastSync > 300) { lastSync = time; syncVideos(); }
+
+    // a project is open and its card has turned to the front: the space stands
+    // still behind the panel (its blur would otherwise be redrawn every frame)
+    if (openId && !tween) { updateSound(dt); return; }
 
     if (tween) {
       tween.t = Math.min(tween.t + dt, tween.duration);
@@ -441,14 +470,14 @@
       if (Math.abs(spin) > 0.00001) {
         view.yaw += spin * dt;                     // inertia after a drag
         spin *= Math.pow(FRICTION, dt / 16);
-      } else if (AUTO_SPIN && !hovering && time - lastInteraction > IDLE_DELAY) {
+      } else if (AUTO_SPIN && !hovering && !menuOpen && time - lastInteraction > IDLE_DELAY) {
+        // no drift under an open menu: its blur would be redrawn every frame
         view.yaw += (AUTO_SPIN * dt) / 1000;       // slow drift when idle
       }
     }
 
     placeCards();
     updateSound(dt);
-    requestAnimationFrame(frame);
   }
 
   // ---- Dragging: rotate horizontally, pinch to zoom ---------------------------
@@ -639,6 +668,7 @@
     panel.setAttribute("aria-hidden", "true");
     projects.forEach((q) => q.card.classList.remove("is-active"));
     panelContent.querySelectorAll("video").forEach((v) => v.pause());
+    syncVideos();                                 // the cards play again right away
   }
 
   function route() {
@@ -668,6 +698,7 @@
       b.setAttribute("aria-expanded", "false");
       document.getElementById(`menu-${b.dataset.menu}`).hidden = true;
     });
+    menuOpen = false;
   }
   menuButtons.forEach((b) => b.addEventListener("click", () => {
     const open = b.getAttribute("aria-expanded") !== "true";
@@ -675,6 +706,7 @@
     if (open) {
       b.setAttribute("aria-expanded", "true");
       document.getElementById(`menu-${b.dataset.menu}`).hidden = false;
+      menuOpen = true;
     }
   }));
 

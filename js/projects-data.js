@@ -552,5 +552,38 @@ window.PROJECTS_DATA = [
         "anchor":  null,
         "videoFocusX":  null,
         "invert":  true
+    },
+    {
+        "id":  "the-roman-forum",
+        "title":  "The Roman Forum",
+        "location":  "Ancient Rome",
+        "author":  "Unknown",
+        "year":  "7th–6th century BCE",
+        "size":  null,
+        "contributor":  "Carola Marín Cuesta",
+        "credits":  "Penn State University",
+        "text":  "The Roman Forum developed into the political, social and judicial centre of Ancient Rome. Surrounded by temples, basilicas and government buildings, it served as a public space where citizens gathered to discuss political affairs, listen to speeches and participate in civic life. During the Roman Republic, political figures addressed the public from the Rostra, a raised speaking platform, while the nearby Curia housed meetings of the Roman Senate. The Forum illustrates the growing relationship between architecture and political authority, transforming the public square into a monumental space for civic expression and the display of power.",
+        "heroImage":  "projects/the-roman-forum/the-roman-forum_hero.webp",
+        "heroVideo":  null,
+        "background":  null,
+        "gallery":  [
+                        {
+                            "src":  "projects/the-roman-forum/the-roman-forum_1.webp",
+                            "caption":  "Isometric view of the complex."
+                        },
+                        {
+                            "src":  "projects/the-roman-forum/the-roman-forum_2.webp",
+                            "caption":  "Drawing of a restored forum."
+                        },
+                        {
+                            "src":  "projects/the-roman-forum/the-roman-forum_3.webp",
+                            "caption":  "Ruins of the Roman Forum."
+                        }
+                    ],
+        "position":  null,
+        "mapWidth":  null,
+        "anchor":  null,
+        "videoFocusX":  null,
+        "invert":  false
     }
 ];

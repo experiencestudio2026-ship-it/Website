@@ -1,0 +1,22 @@
+# DEMOCRACY & SPACE - PROJECT INFO
+# Fill in the text after each KEYWORD: and keep the keywords exactly as they are.
+# Lines starting with # are ignored - you can delete them.
+
+TITLE: The Roman Forum
+LOCATION: Ancient Rome
+AUTHOR: Unknown
+YEAR: 7th–6th century BCE
+CONTRIBUTED BY: Carola Marín Cuesta
+CREDITS: Penn State University
+
+# --- site editor settings (optional) ---
+INVERT: no
+
+TEXT:
+The Roman Forum developed into the political, social and judicial centre of Ancient Rome. Surrounded by temples, basilicas and government buildings, it served as a public space where citizens gathered to discuss political affairs, listen to speeches and participate in civic life. During the Roman Republic, political figures addressed the public from the Rostra, a raised speaking platform, while the nearby Curia housed meetings of the Roman Senate. The Forum illustrates the growing relationship between architecture and political authority, transforming the public square into a monumental space for civic expression and the display of power.
+
+CAPTIONS:
+# one caption per image: the number matches the end of the file name
+1: Isometric view of the complex.
+2: Drawing of a restored forum.
+3: Ruins of the Roman Forum.
