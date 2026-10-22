@@ -555,7 +555,7 @@ window.PROJECTS_DATA = [
     },
     {
         "id":  "the-roman-forum",
-        "title":  "The Roman Forum",
+        "title":  "Forum Romanum",
         "location":  "Ancient Rome",
         "author":  "Unknown",
         "year":  "7th–6th century BCE",
@@ -652,6 +652,47 @@ window.PROJECTS_DATA = [
                         {
                             "src":  "projects/typology-opposing/typology-opposing_4.webp",
                             "caption":  "National Assembly of Quebec, 2022."
+                        }
+                    ],
+        "position":  null,
+        "mapWidth":  null,
+        "anchor":  null,
+        "videoFocusX":  null,
+        "invert":  false
+    },
+    {
+        "id":  "book-democracy-urban-form",
+        "title":  "Reflections on Democracy and Urban Form",
+        "location":  "Harvard Graduate School of Design (GSD) in collaboration with Cultures of Assembly (COA) at the University of Luxembourg",
+        "author":  "Richard Sennett, Diane E. Davis (ed.), Miguel Robles-Durán, Claire Zimmerman, Markus Miessen (ed.)",
+        "year":  "2024",
+        "size":  null,
+        "contributor":  "",
+        "credits":  null,
+        "text":  "This book builds on conversations that took place in 2024 at Harvard GSD, marking the release of Democracy and Urban Form that showcased a series of six lectures and provocations that sociologist Richard Sennett gave under the same name at the GSD in 1981. On October 10, 2024, these provocations continued during a panel that included Richard Sennett, Diane E. Davis, Miguel Robles-Durán, Claire Zimmerman, and Markus Miessen.\n\n“There are Three ways in which I think architectural, but especially democracy of bodies-not a discursive democracy, but a democracy of relationships between human beings in space, themselves. That’s the basis for all my urbanism, the notion of making people aware of themselves as one among many, which I think cities can do, and which produces a kind of democracy of the body.” (Richard Sennett, p. 26)\n\nPorosity.\nInformality.\nAdjacency.\n\n“It is a profound principle of how right to the city works, the assumption that through experience people develop the knowledge of how to use the city. This vision on a larger scale allows for people to reorient themselves to things that are not safe, learning that they are one among many, and to gradually develop a kind of urban competency. This urban competency can be applied to both space and people. Aldo’s principle about children learning how to play in a city can also be approached in the way adults deal with each other in the street and within institutions.” (Richard Sennett, p. 28)",
+        "heroImage":  "projects/book-democracy-urban-form/book-democracy-urban-form_hero.webp",
+        "heroVideo":  null,
+        "background":  null,
+        "gallery":  [
+                        {
+                            "src":  "projects/book-democracy-urban-form/book-democracy-urban-form_1.webp",
+                            "caption":  "Nehru Place in Delhi."
+                        },
+                        {
+                            "src":  "projects/book-democracy-urban-form/book-democracy-urban-form_2.webp",
+                            "caption":  "Nehru Place in Delhi."
+                        },
+                        {
+                            "src":  "projects/book-democracy-urban-form/book-democracy-urban-form_3.webp",
+                            "caption":  "Aldo van Eyck’s playground at the Buskenblaserstraat in Amsterdam (courtesy of the Amsterdam City Archive)."
+                        },
+                        {
+                            "src":  "projects/book-democracy-urban-form/book-democracy-urban-form_4.webp",
+                            "caption":  "Aldo van Eyck’s playground at the Laagte Kadijk in Amsterdam (courtesy of the Amsterdam City Archive)."
+                        },
+                        {
+                            "src":  "projects/book-democracy-urban-form/book-democracy-urban-form_5.webp",
+                            "caption":  "Aldo van Eyck’s playground at the Van Boetzelaerstraat in Amsterdam (courtesy of the Amsterdam City Archive)."
                         }
                     ],
         "position":  null,
