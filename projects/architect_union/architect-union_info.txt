@@ -9,11 +9,11 @@ TEXT:
 
 # 1. Status Quo
 
-Architecture is a profession with high educational demands, considerable responsibility and a clear social impact. Salaries and working conditions do not always reflect these demands. Salary data show differences between Germany, France and Switzerland, partly reflecting different living costs and labour markets. Across all three countries, concerns about overtime, workload and adequate compensation raise a common question: why does a profession that demands so much commitment struggle to secure consistently fair working conditions?
+Architecture is a profession with high educational demands, considerable responsibility and a clear social impact. Yet, salaries and working conditions do not always reflect these demands. Salary data show differences between Germany, France and Switzerland, partly reflecting different living costs and labour markets. Across all three countries, concerns about overtime, workload and adequate compensation raise a common question: why does a profession that demands so much commitment struggle to secure consistently fair working conditions?
 
-The situation differs between countries. France has a standard 35-hour working week and a national collective agreement for architecture firms. Germany has no universal statutory overtime premium or comparable sector-wide collective agreement covering all architecture practices. In Switzerland, working conditions and collective arrangements can vary regionally. Despite these differences, unpaid or inadequately compensated overtime remains a concern. The available figures suggest that the problem is not exclusive to one national system, although the surveys are not directly comparable and some are not nationally representative.
+The situation differs between countries. France has a standard 35-hour working week and a national collective agreement for architecture firms. Germany has a 40-hour working week and recommendations for overtime compensation but no binding country-wide agreement. In Switzerland, working conditions and collective arrangements can vary regionally. Despite these differences, unpaid or inadequately compensated overtime remains a concern.
 
-A common structural factor is the small size of architecture practices. In all three countries, the sector is dominated by small offices, where employees may have limited bargaining power and few opportunities for formal workplace representation. Competition, deadlines and tight project budgets can encourage long working hours, while employment conditions are often negotiated individually. The central issue is not simply the level of salaries, but the extent to which employees can influence the conditions under which they work.
+A common structural factor is the small size of architecture practices. In all three countries, the sector is dominated by small offices, where employees may have limited bargaining power and the firms themselves don't have as much financial stability and bargaining power towards their honorary within the industry as well. Competition, deadlines and tight project budgets can encourage long working hours, while employment conditions are often negotiated individually. In France 82% of architects report high work intensity and pressure, 78% feel economic instability and 46% report a lack of cooperation and support. The central issue is not simply the level of salaries, but the extent to which employees and architecture firms can influence the conditions under which they work.
 
 # 2. Forms of Organisation
 
@@ -21,7 +21,7 @@ To understand this problem, it is important to distinguish between three types o
 
 **Lobbying organisations** seek to influence political decisions, legislation and public policy. They can promote architecture’s social and economic importance, but protecting employees’ wages and working hours is not necessarily their primary objective.
 
-**Professional associations and chambers** promote professional standards, qualifications, ethics and recognition. They strengthen the status of architects and represent the profession publicly. Representing architecture as a profession does not automatically mean representing salaried architects in conflicts with employers.
+**Professional associations and chambers** promote professional standards, qualifications, ethics and recognition. They strengthen the status of architects and represent the profession publicly. Their focus lies on representing architecture as a profession and not necessarily representing salaried architects in conflicts with employers.
 
 **Trade unions** represent employees. They negotiate wages and working conditions, provide advice and legal support, and organise workers around shared demands. Through collective bargaining, they can help establish common employment standards across a sector.
 
@@ -29,11 +29,11 @@ Collective agreements are not organisations themselves, but instruments through 
 
 # 3. France
 
-France provides a useful comparison because it has an established system of sectoral collective bargaining in architecture. The *Ordre des architectes*, consisting of a National Council and 17 Regional Councils, regulates the profession, maintains the register of architects and represents the profession in public and institutional discussions. It does not negotiate employees’ wages or act as a trade union.
+France has an established system of sectoral collective bargaining in architecture. The *Ordre des architectes*, consisting of a National Council and 17 Regional Councils, regulates the profession, maintains the register of architects and represents the profession in public and institutional discussions. Still, it does not negotiate employees’ wages or act as a trade union.
 
-The UNSFA and the Syndicat de l’Architecture represent architecture firms and employers. Both participate in social dialogue and collective bargaining on the employers’ side. Their role is necessary, and their economic interests may differ from those of employees, particularly regarding salary increases, working hours and overtime compensation.
+The *UNSFA* and the *Syndicat de l’Architecture* represent architecture firms and employers. Both participate in social dialogue and collective bargaining on the employers’ side. Their role is necessary, and their economic interests may differ from those of employees, particularly regarding salary increases, working hours and overtime compensation.
 
-On the employees’ side, organisations such as SYNATPAU participate in sectoral negotiations. The central instrument is the *Convention collective nationale des entreprises d’architecture* (IDCC 2332), which establishes a framework for employment conditions and professional classifications. Its extension in 2026 to employers within its scope strengthens the reach of the negotiated rules.
+On the employees’ side, organisations such as *SYNATPAU* participate in sectoral negotiations. The central instrument is the *Convention collective nationale des entreprises d’architecture* (IDCC 2332), which establishes a framework for employment conditions and professional classifications. Its extension in 2026 to employers within its scope strengthens the reach of the negotiated rules.
 
 Compared with Germany, France has a more clearly established sector-wide framework for negotiating employment conditions. Switzerland illustrates how collective arrangements can differ regionally. These institutional differences matter, but they do not automatically translate into better everyday working conditions. The reported levels of uncompensated overtime in France demonstrate why the existence of a collective agreement must be distinguished from its implementation and enforcement. Employees must also know their rights and feel able to assert them.
 
@@ -43,7 +43,7 @@ France shows that collective bargaining can establish common rules beyond indivi
 
 Several structural problems help explain why existing organisations may not adequately improve working conditions across the three countries.
 
-**Small offices** make collective organisation difficult. Employees are dispersed across many workplaces rather than concentrated in large companies with established representation structures. **Fragmented representation** creates another obstacle: chambers, professional associations, employer organisations and trade unions have different mandates, and employees’ interests may not receive the same visibility as professional regulation or business concerns.
+**Small offices** make collective organisation difficult. Employees are dispersed across many workplaces rather than concentrated in large companies with established representation structures and the office itself also can't generate a big bargaining power within the industry. **Fragmented representation** creates another obstacle: chambers, professional associations, employer organisations and trade unions have different mandates, and employees’ interests may not receive the same visibility as professional regulation or business concerns.
 
 **Limited data and public visibility** also weaken the case for reform. Without reliable and comparable information on salaries, overtime, workload and employee satisfaction, it is difficult to measure the scale of problems or evaluate whether existing agreements improve conditions. **Weak practical enforcement** can undermine formal rights. Job insecurity, workplace hierarchies and concerns about professional relationships may discourage employees from challenging unpaid overtime or excessive workloads.
 
